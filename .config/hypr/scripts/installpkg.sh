@@ -34,6 +34,7 @@ pacman_packages=(
     qt5ct
     qt6ct
     adw-gtk-theme
+    libvips
 )
 
 aur_packages=(
