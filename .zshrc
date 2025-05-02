@@ -18,15 +18,7 @@ HISTDUP=erase
 setopt appendhistory
 setopt sharehistory
 
-# Set-up icons for files/folders in terminal
-alias ls='eza --icons --color=always'
-alias lt='eza -a --tree --level=1 --icons --color=always'
-alias grep='grep --color=always'
-
-# Set-up alias
-alias vim='nvim'
-alias cbonsai='cbonsai -l -i -w 1'
-
+# Keybind
 bindkey -e
 
 # Setup fzf
@@ -82,6 +74,14 @@ elif [ -f "$realpath" ]; then
     bat -n --color=always --line-range :500 "$realpath"
 fi
 '
+
+# Setup alias
+# Setup icons for files/folders in terminal
+alias ls='eza --icons --color=always'
+alias lt='eza -a --tree --level=1 --icons --color=always'
+alias grep='grep --color=always'
+alias vim='nvim'
+alias cbonsai='cbonsai -l -i -w 1'
 
 # Setup bat (better than cat)
 export BAT_THEME=Dracula
