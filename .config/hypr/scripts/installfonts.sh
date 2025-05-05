@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
