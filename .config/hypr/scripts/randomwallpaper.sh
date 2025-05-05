@@ -1,6 +1,6 @@
 #!/bin/bash
 
-src_dir="$HOME/.config/wallpapers"
+src_dir="$HOME/Pictures/Wallpapers"
 des_dir="$HOME/.cache/swww"
 
 swww img $src_dir/$(ls $src_dir | shuf -n1) --transition-type any --transition-duration 2
