@@ -35,7 +35,7 @@ export FZF_TAB_COLORS='fg:#f8f8f2,bg:#282a36,hl:#bd93f9,min-height=5'
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/viet/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${ZDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
