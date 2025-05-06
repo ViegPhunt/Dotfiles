@@ -1,102 +1,94 @@
 {
-  "Created": "Phunt_Vieg_",
-  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "blocks": [
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-          {
-            "foreground": "#D6DEEB",
-            "style": "plain",
-            "template": "\u256d\u2500",
-            "type": "text"
-          },
-          {
-            "background": "#58aac4",
-            "foreground": "#f8f8f2",
-            "leading_diamond": "\ue0b6",
-            "style": "diamond",
-            "template": " \uefa7  ",
-            "trailing_diamond": "\ue0b0",
-            "type": "os"
-          },
-          {
-            "background": "#6272a4",
-            "foreground": "#f8f8f2",
-            "style": "diamond",
-            "template": " {{ .UserName }}@{{ .HostName }} ",
-            "trailing_diamond": "\ue0b0",
-            "type": "session"
-          },
-          {
-            "background": "#bd93f9",
-            "foreground": "#f8f8f2",
-            "properties": {
-              "style": "full"
-            },
-            "style": "diamond",
-            "template": " {{ .Path }} ",
-            "trailing_diamond": "\ue0b0",
-            "type": "path"
-          },
-          {
-            "background": "#ffb86c",
-            "foreground": "#f8f8f2",
-            "powerline_symbol": "\ue0b0",
-            "properties": {
-              "branch_icon": "",
-              "fetch_stash_count": true,
-              "fetch_status": false,
-              "fetch_upstream_icon": true
-            },
-            "style": "diamond",
-            "template": " \ue725 ({{ .UpstreamIcon }} {{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
-            "trailing_diamond": "\ue0b0",
-            "type": "git"
-          },
-          {
-            "background": "#ff79c6",
-            "foreground": "#f8f8f2",
-            "properties": {
-              "time_format": "15:04"
-            },
-            "style": "diamond",
-            "template": " \u2665  {{ .CurrentDate | date .Format }} ",
-            "trailing_diamond": "\ue0b0",
-            "type": "time"
-          }
-        ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "newline": true,
-      "segments": [
+    "Created": "Phunt_Vieg_",
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
         {
-          "foreground": "#D6DEEB",
-          "style": "plain",
-          "template": "\u2570\u2500",
-          "type": "text"
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "foreground": "white",
+                    "style": "plain",
+                    "template": "\u256d\u2500",
+                    "type": "text"
+                },
+                {
+                    "background": "#58aac4",
+                    "foreground": "white",
+                    "leading_diamond": "\ue0b6",
+                    "style": "diamond",
+                    "template": " \uefa7  ",
+                    "trailing_diamond": "\ue0b0",
+                    "type": "os"
+                },
+                {
+                    "background": "darkGray",
+                    "foreground": "white",
+                    "style": "diamond",
+                    "template": " {{ .UserName }}@{{ .HostName }} ",
+                    "trailing_diamond": "\ue0b0",
+                    "type": "session"
+                },
+                {
+                    "background": "blue",
+                    "foreground": "white",
+                    "properties": {
+                        "style": "full"
+                    },
+                    "style": "diamond",
+                    "template": " {{ .Path }} ",
+                    "trailing_diamond": "\ue0b0",
+                    "type": "path"
+                },
+                {
+                    "background": "#ffb86c",
+                    "foreground": "white",
+                    "powerline_symbol": "\ue0b0",
+                    "properties": {
+                        "branch_icon": "",
+                        "fetch_stash_count": true,
+                        "fetch_status": false,
+                        "fetch_upstream_icon": true
+                    },
+                    "style": "diamond",
+                    "template": " \ue725 ({{ .UpstreamIcon }} {{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+                    "trailing_diamond": "\ue0b0",
+                    "type": "git"
+                },
+                {
+                    "background": "magenta",
+                    "foreground": "white",
+                    "properties": {
+                        "time_format": "15:04"
+                    },
+                    "style": "diamond",
+                    "template": " \u2665  {{ .CurrentDate | date .Format }} ",
+                    "trailing_diamond": "\ue0b0",
+                    "type": "time"
+                }
+            ]
         },
         {
-          "foreground": "#ffffff",
-          "style": "plain",
-          "properties": {
-            "always_enabled": true
-          },
-          "template": "<green><b>\u26a1</b>",
-          "type": "text"
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "background": "transparent",
+                    "foreground": "white",
+                    "style": "plain",
+                    "template": "\u2570\u2500<green><b>\u26a1</b>",
+                    "type": "text"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "transient_prompt": {
-    "background": "transparent",
-    "foreground": "#ffffff",
-    "template": "<#bd93f9><b>\uf489<b> <#8be9fd><b>\uf0da<b><#ff92df><b>\uf105<b> "
-  },
-  "final_space": true,
-  "version": 3
+    ],
+    "transient_prompt": {
+        "background": "transparent",
+        "foreground": "white",
+        "template": "<blue><b>\uf489<b> <cyan><b>\uf0da<b><lightMagenta><b>\uf105<b> "
+    },
+    "final_space": true,
+    "version": 4
 }
