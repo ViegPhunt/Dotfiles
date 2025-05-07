@@ -8,14 +8,14 @@
             "newline": true,
             "segments": [
                 {
-                    "foreground": "white",
+                    "foreground": "lightWhite",
                     "style": "plain",
                     "template": "\u256d\u2500",
                     "type": "text"
                 },
                 {
                     "background": "darkGray",
-                    "foreground": "white",
+                    "foreground": "lightWhite",
                     "leading_diamond": "\ue0b6",
                     "style": "diamond",
                     "template": " {{ .UserName }}@{{ .HostName }} ",
@@ -24,7 +24,7 @@
                 },
                 {
                     "background": "blue",
-                    "foreground": "white",
+                    "foreground": "lightWhite",
                     "properties": {
                         "style": "full"
                     },
@@ -35,7 +35,7 @@
                 },
                 {
                     "background": "magenta",
-                    "foreground": "white",
+                    "foreground": "lightWhite",
                     "properties": {
                         "branch_icon": "",
                         "fetch_stash_count": true,
@@ -49,7 +49,7 @@
                 },
                 {
                     "background": "magenta",
-                    "foreground": "white",
+                    "foreground": "lightWhite",
                     "properties": {
                         "time_format": "15:04"
                     },
@@ -66,7 +66,7 @@
             "newline": true,
             "segments": [
                 {
-                    "foreground": "white",
+                    "foreground": "lightWhite",
                     "style": "plain",
                     "template": "\u2570\u2500<green>\u26a1</>",
                     "type": "text"
