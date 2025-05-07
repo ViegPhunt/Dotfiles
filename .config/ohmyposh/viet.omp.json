@@ -14,17 +14,9 @@
                     "type": "text"
                 },
                 {
-                    "background": "#58aac4",
-                    "foreground": "white",
-                    "leading_diamond": "\ue0b6",
-                    "style": "diamond",
-                    "template": " \uefa7  ",
-                    "trailing_diamond": "\ue0b0",
-                    "type": "os"
-                },
-                {
                     "background": "darkGray",
                     "foreground": "white",
+                    "leading_diamond": "\ue0b6",
                     "style": "diamond",
                     "template": " {{ .UserName }}@{{ .HostName }} ",
                     "trailing_diamond": "\ue0b0",
@@ -42,9 +34,8 @@
                     "type": "path"
                 },
                 {
-                    "background": "#ffb86c",
+                    "background": "magenta",
                     "foreground": "white",
-                    "powerline_symbol": "\ue0b0",
                     "properties": {
                         "branch_icon": "",
                         "fetch_stash_count": true,
@@ -52,7 +43,7 @@
                         "fetch_upstream_icon": true
                     },
                     "style": "diamond",
-                    "template": " \ue725 ({{ .UpstreamIcon }} {{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+                    "template": " \ue725({{ .UpstreamIcon }} {{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
                     "trailing_diamond": "\ue0b0",
                     "type": "git"
                 },
@@ -63,7 +54,7 @@
                         "time_format": "15:04"
                     },
                     "style": "diamond",
-                    "template": " \u2665  {{ .CurrentDate | date .Format }} ",
+                    "template": "{{ if ne (.Segments.Contains \"Git\") true }} \u2665  {{ .CurrentDate | date .Format }} {{ end }}",
                     "trailing_diamond": "\ue0b0",
                     "type": "time"
                 }
@@ -75,20 +66,17 @@
             "newline": true,
             "segments": [
                 {
-                    "background": "transparent",
                     "foreground": "white",
                     "style": "plain",
-                    "template": "\u2570\u2500<green><b>\u26a1</b>",
+                    "template": "\u2570\u2500<green>\u26a1</>",
                     "type": "text"
                 }
             ]
         }
     ],
     "transient_prompt": {
-        "background": "transparent",
-        "foreground": "white",
-        "template": "<blue><b>\uf489<b> <cyan><b>\uf0da<b><lightMagenta><b>\uf105<b> "
+        "template": "<blue>\uf489 </><cyan>\uf0da</><magenta>\uf105</> "
     },
     "final_space": true,
-    "version": 4
+    "version": 5
 }
