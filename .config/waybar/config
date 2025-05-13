@@ -1,13 +1,26 @@
 {
-    "modules-left": ["custom/power", "hyprland/workspaces",],
+    "modules-left": ["custom/power", "hyprland/workspaces", "hyprland/window"],
     // "modules-center": [],
     "modules-right": ["tray", "bluetooth", "network", "battery", "pulseaudio", "clock"],
+
+    "custom/power": {
+        "format" : "⭘ ",
+        "tooltip": false,
+        "on-click": "wlogout -b 5",
+    },
 
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
         "format": "{name}",
+    },
+
+    "hyprland/window": {
+        "max-length": 35,
+        "separate-outputs": true,
+        "format": "{}",
+        "icon": false
     },
 
     "tray": {
@@ -61,11 +74,5 @@
     "clock": {
         "format": "{:%a %d/%m/%Y ~ %H:%M}",
         "tooltip-format": "<tt><big>{calendar}</big></tt>",
-    },
-
-    "custom/power": {
-        "format" : "⭘ ",
-		"tooltip": false,
-		"on-click": "wlogout -b 5",
     }
 }
