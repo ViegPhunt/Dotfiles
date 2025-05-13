@@ -1,12 +1,12 @@
 * {
     font-family: "JetBrainsMono Nerd Font";
-    font-size: 15px;
+    font-size: 12px;
     min-height: 0;
     font-weight: bold;
 }
 
 #waybar {
-    background: none;
+    background: rgba(68, 68, 68, 0.5);
     padding: 0px;
 }
 
@@ -37,6 +37,7 @@
 }
 
 #workspaces,
+#window,
 #custom-power,
 #tray,
 #idle_inhibitor,
@@ -45,7 +46,7 @@
 #battery,
 #pulseaudio,
 #clock {
-    margin: 2px 3px 0;
+    margin: 2px 3px;
     padding: 1px 6px;
     background-color: #282a36;
     border-radius: 5;
