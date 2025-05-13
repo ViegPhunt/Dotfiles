@@ -1,7 +1,7 @@
 {
     "modules-left": ["custom/power", "hyprland/workspaces",],
     // "modules-center": [],
-    "modules-right": ["tray", "idle_inhibitor", "bluetooth", "network", "battery", "pulseaudio", "clock"],
+    "modules-right": ["tray", "bluetooth", "network", "battery", "pulseaudio", "clock"],
 
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -13,14 +13,6 @@
     "tray": {
         "icon-size": 20,
         "spacing": 10,
-    },
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "   ",
-            "deactivated": "   ",
-        },
     },
 
     "bluetooth": {
