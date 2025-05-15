@@ -1,5 +1,5 @@
 {
-    "modules-left": ["custom/power", "hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["custom/power", "hyprland/workspaces"],
     // "modules-center": [],
     "modules-right": ["tray", "bluetooth", "network", "battery", "pulseaudio", "clock"],
 
@@ -14,13 +14,6 @@
         "all-outputs": true,
         "warp-on-scroll": false,
         "format": "{name}",
-    },
-
-    "hyprland/window": {
-        "max-length": 35,
-        "separate-outputs": true,
-        "format": "{}",
-        "icon": false
     },
 
     "tray": {
