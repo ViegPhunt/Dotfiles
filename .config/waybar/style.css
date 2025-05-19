@@ -22,18 +22,13 @@
     transition: none;
 }
 
-#workspaces button.focused {
-    color: #f5e0dc;
-    border-bottom: 2px solid #f5e0dc;
-}
-
 #workspaces button.active {
     color: #ff79c6;
     border: 2px solid #ff79c6;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #ff5555;
 }
 
 #workspaces,
