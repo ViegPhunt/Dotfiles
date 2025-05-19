@@ -1,5 +1,4 @@
 # Created by Phunt_Vieg_
-# Created by newuser for 5.9
 # autoload -Uz zsh-newuser-install
 # zsh-newuser-install -f# Lines configured by zsh-newuser-install
 
@@ -25,13 +24,13 @@ bindkey -e
 eval "$(fzf --zsh)"
 
 # fzf theme
-export FZF_DEFAULT_OPTS='
---color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 
---color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 
---color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 
---color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4
-'
-export FZF_TAB_COLORS='fg:#f8f8f2,bg:#282a36,hl:#bd93f9,min-height=5'
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
+--color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+--color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+--color=selected-bg:#45475A \
+--color=border:#313244,label:#CDD6F4"
+export FZF_TAB_COLORS='fg:#CDD6F4,bg:#1E1E2E,hl:#F38BA8,min-height=5'
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -83,12 +82,16 @@ alias grep='grep --color=always'
 alias vim='nvim'
 alias cbonsai='cbonsai -l -i -w 1'
 
+# Setup bat (better than cat)
+export BAT_THEME="base16"
+alias bat='bat --paging=never'
+
 # Setup zoxide (better than cd)
 eval "$(zoxide init zsh)"
 
 
 
-# Create random number
+# Show random terminal banner on startup
 RANDOM_NUMBER=$(shuf -i 1-10 -n 1)
 # Random between fastfetch and pokemon-colorscripts
 if (( RANDOM_NUMBER % 2 == 0 )); then
@@ -100,5 +103,5 @@ fi
 # fastfetch
 # pokemon-colorscripts --no-title -s -r
 
-# Turn on Oh My Posh
+# Initialize Oh My Posh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/viet.omp.json)"
