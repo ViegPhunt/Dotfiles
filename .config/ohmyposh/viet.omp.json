@@ -14,28 +14,28 @@
                     "type": "text"
                 },
                 {
-                    "background": "darkGray",
-                    "foreground": "lightWhite",
+                    "background": "yellow",
+                    "foreground": "black",
                     "leading_diamond": "\ue0b6",
                     "style": "diamond",
-                    "template": " {{ .UserName }}@{{ .HostName }} ",
+                    "template": " {{ .UserName }} ",
                     "trailing_diamond": "\ue0b0",
                     "type": "session"
                 },
                 {
                     "background": "blue",
-                    "foreground": "lightWhite",
+                    "foreground": "black",
                     "properties": {
                         "style": "full"
                     },
                     "style": "diamond",
-                    "template": " {{ .Path }} ",
+                    "template": " \uf114  {{ .Path }} ",
                     "trailing_diamond": "\ue0b0",
                     "type": "path"
                 },
                 {
                     "background": "magenta",
-                    "foreground": "lightWhite",
+                    "foreground": "black",
                     "properties": {
                         "branch_icon": "",
                         "fetch_stash_count": true,
@@ -49,7 +49,7 @@
                 },
                 {
                     "background": "magenta",
-                    "foreground": "lightWhite",
+                    "foreground": "black",
                     "properties": {
                         "time_format": "15:04"
                     },
@@ -75,8 +75,8 @@
         }
     ],
     "transient_prompt": {
-        "template": "<blue>\uf489 </><cyan>\uf0da</><magenta>\uf105</> "
+        "template": "<red>\uf489 </><blue>\uf0da</><magenta>\uf105</> "
     },
     "final_space": true,
-    "version": 5
+    "version": 6
 }
