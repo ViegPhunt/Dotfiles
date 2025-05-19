@@ -84,7 +84,7 @@ alias vim='nvim'
 alias cbonsai='cbonsai -l -i -w 1'
 
 # Setup bat (better than cat)
-export BAT_THEME=Dracula
+export BAT_THEME="Catppuccin Mocha"
 alias bat='bat --paging=never'
 
 # Setup zoxide (better than cd)
