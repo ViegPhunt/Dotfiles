@@ -1,28 +1,30 @@
 @keyframes glowing {
     0% {
-        box-shadow: 0 0 30px #ff8fc7;
+        box-shadow: 0 0 30px @pink;
     }
     20% {
-        box-shadow: 0 0 30px #ff8fc7;
+        box-shadow: 0 0 30px @pink;
     }
     80% {
-        box-shadow: 0 0 30px #ffffff;
+        box-shadow: 0 0 30px @text;
     }
     100% {
-        box-shadow: 0 0 30px #8be9fd;
+        box-shadow: 0 0 30px @blue;
     }
 }
-
 
 * {
     background-image: none;
     font-family: "JetBrainsMono Nerd Font";
-	transition: 20ms;
+    transition: 20ms;
 }
+
+/* @import "$HOME/.config/colors/colors.css" */
+@import "../colors/colors.css";
 
 window {
     background: rgba(0, 0, 0, 0.3);
-	font-size: 0px;
+    font-size: 0px;
 }
 
 button {
