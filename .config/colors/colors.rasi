@@ -10,7 +10,7 @@
     yellow: #f9e2af;
     green: #a6e3a1;
     blue: #89b4fa;
-    gray: #313244;
+    gray: #45475a;
 
     active-background: @select;
     urgent-background: @red;
