@@ -1,7 +1,7 @@
 * {
     background: #1e1e2e;
     foreground: #cdd6f4;
-    select: #6c7086;
+    select: #585b70;
 
     pink: #f5c2e7;
     purple: #cba6f7;
@@ -10,6 +10,7 @@
     yellow: #f9e2af;
     green: #a6e3a1;
     blue: #89b4fa;
+    gray: #313244;
 
     active-background: @select;
     urgent-background: @red;

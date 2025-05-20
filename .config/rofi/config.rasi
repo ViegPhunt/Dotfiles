@@ -15,7 +15,7 @@ configuration {
 }
 
 #window {
-    background-color: @background-color;
+    background-color: @background;
     border:           3;
     border-radius:    6;
     border-color:     @bordercolor;

@@ -55,7 +55,7 @@
 #battery:hover,
 #pulseaudio:hover,
 #clock:hover {
-    background-color: @select;
+    background-color: @gray;
 }
 
 #bluetooth {
