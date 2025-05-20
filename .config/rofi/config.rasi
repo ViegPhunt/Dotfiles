@@ -2,31 +2,23 @@ configuration {
     scroll-method: 1;
     scrollbar: true;
     show-icons: true;
-    display-drun: "";
-    display-window: "Windows: ";
+    display-run: "Run: ";
+    display-drun: "Open: ";
     drun-display-format: "{icon} {name}";
-    modi: "window,run,drun,emoji";
+    modi: "run,drun,emoji";
 }
+
+@import "~/.config/colors/colors.rasi"
 
 * {
     font: "JetbrainsMono Nerd Font 15";
-    foreground: #f8f8f2;
-    background-color: #282a36;
-    active-background: #6272a4;
-    urgent-background: #ff5555;
-    urgent-foreground: #282a36;
-    selected-background: @active-background;
-    selected-urgent-background: @urgent-background;
-    selected-active-background: @active-background;
-    separatorcolor: @active-background;
-    bordercolor: @active-background;
 }
 
 #window {
     background-color: @background-color;
     border:           3;
     border-radius:    6;
-    border-color:     #6272a4;
+    border-color:     @bordercolor;
     padding:          15;
     width:            600px;
 }
@@ -96,7 +88,7 @@ configuration {
     border:       0;
     handle-width: 8px ;
     padding:      0;
-    handle-color: #6272a4;
+    handle-color: @select;
 }
 #sidebar {
     border:       2px dash 0px 0px ;
@@ -112,7 +104,7 @@ configuration {
     padding:       15px;
     border:        3px;
     border-radius: 6px;
-    border-color:  #6272a4;
+    border-color:  @bordercolor;
 }
 #case-indicator {
     spacing:    0;

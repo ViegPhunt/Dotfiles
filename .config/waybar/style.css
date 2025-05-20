@@ -15,7 +15,7 @@
 
 #workspaces button {
     background: none;
-    color: @text;
+    color: @foreground;
     border: none;
     border-radius: 5px;
     padding: 0 8px;
@@ -85,6 +85,6 @@
 
 #custom-power {
     padding-left: 10px;
-    color: @text;
-    border: 2px solid @text;
+    color: @foreground;
+    border: 2px solid @foreground;
 }

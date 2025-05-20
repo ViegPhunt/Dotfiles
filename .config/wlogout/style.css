@@ -6,7 +6,7 @@
         box-shadow: 0 0 30px @pink;
     }
     80% {
-        box-shadow: 0 0 30px @text;
+        box-shadow: 0 0 30px @foreground;
     }
     100% {
         box-shadow: 0 0 30px @blue;
