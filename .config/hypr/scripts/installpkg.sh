@@ -49,6 +49,7 @@ aur_packages=(
     visual-studio-code-bin
     cursor-bin
     sublime-text-4
+    brave-bin
     zen-browser-bin
     sddm-sugar-candy-git
     apple_cursor
