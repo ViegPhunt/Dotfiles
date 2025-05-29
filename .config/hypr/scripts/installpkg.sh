@@ -18,7 +18,7 @@ pkgs=(
     fcitx5 fcitx5-gtk fcitx5-bamboo libsForQt5.fcitx5-configtool libsForQt5.fcitx5-qt
 
     # Browsers and Communication
-    discord-ptb spotify brave
+    spotify brave
 
     # Code Editors and IDEs
     vscode code-cursor sublime4
