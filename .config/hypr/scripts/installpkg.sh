@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+
 pkgs=(
     # Hyprland & Wayland Environment
     hyprland hyprlock hyprshot swww wlogout grim slurp swaynotificationcenter waybar rofi-wayland rofi-emoji
