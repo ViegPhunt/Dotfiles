@@ -1,61 +1,26 @@
 #!/usr/bin/env bash
-
-pacman_packages=(
-    hyprland
-    ghostty
-    nemo
-    swww
-    waybar
-    rofi
-    rofi-emoji
-    hyprlock
-    swaync
-    brightnessctl
-    network-manager-applet
-    bluez
-    bluez-utils
-    blueman
-    fcitx5
-    fcitx5-gtk
-    fcitx5-qt
-    fcitx5-configtool
-    fcitx5-bamboo
-    discord
-    pipewire
-    wireplumber
-    grim
-    slurp
-    gnome-text-editor
-    nwg-look
-    cheese
-    loupe
-    celluloid
-    sddm
-    obs-studio
-    pavucontrol
-    qt5ct
-    qt6ct
-    adw-gtk-theme
-    libvips
+set -euo pipefail
+pkgs=(
+    # Hyprland & Wayland Environment
+    hyprland hyprlock hyprshot swww wlogout grim slurp swaynotificationcenter waybar rofi-wayland rofi-emoji
+    # System
+    brightnessctl networkmanagerapplet bluez bluez-tools blueman pipewire wireplumber pavucontrol
+    # System Utilities and Media
+    # cava
+    ghostty nemo-with-extensions cheese loupe celluloid gnome-text-editor obs-studio
+    # Qt & Display Manager Support
+    libsForQt5.sddm libsForQt5.qt5ct kdePackages.qt6ct
+    # Input Method
+    fcitx5 fcitx5-gtk fcitx5-bamboo libsForQt5.fcitx5-configtool libsForQt5.fcitx5-qt
+    # Browsers and Communication
+    # discord spotify
+    brave
+    # Code Editors and IDEs
+    # vscode code-cursor sublime4
+    # Themes, Icons, Fonts
+    # apple-cursor 
+    whitesur-icon-theme nerd-fonts.jetbrains-mono adw-gtk3 nwg-look
+    # Misc
+    xdg-desktop-portal-hyprland vips python312Packages.pillow
 )
-
-aur_packages=(
-    wlogout
-    hyprshot
-    xdg-desktop-portal-hyprland
-    cava
-    spotify
-    rofi-greenclip
-    visual-studio-code-bin
-    cursor-bin
-    sublime-text-4
-    brave-bin
-    zen-browser-bin
-    sddm-sugar-candy-git
-    apple_cursor
-    whitesur-icon-theme
-    ttf-jetbrains-mono-nerd
-)
-
-sudo pacman -S --noconfirm "${pacman_packages[@]}"
-yay -S --noconfirm "${aur_packages[@]}"
+nix profile install ${pkgs[@]/#/nixpkgs#}
