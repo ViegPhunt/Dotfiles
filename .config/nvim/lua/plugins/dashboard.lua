@@ -81,7 +81,7 @@ return {
                 },
                 footer = {
                     "",
-                    "  GitHub: https://github.com/vietpq685",
+                    "  GitHub: https://github.com/ViegPhunt",
                 },
             }
         })
