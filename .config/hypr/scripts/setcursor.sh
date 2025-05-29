@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 mkdir -p ~/.icons/default/
 touch ~/.icons/default/index.theme

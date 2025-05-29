@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 pacman_packages=(
     hyprland

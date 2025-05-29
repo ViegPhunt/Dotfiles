@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 SCHEME='prefer-dark'
 THEME='adw-gtk3-dark'
