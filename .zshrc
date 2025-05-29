@@ -91,17 +91,7 @@ eval "$(zoxide init zsh)"
 
 
 
-# Show random terminal banner on startup
-RANDOM_NUMBER=$(shuf -i 1-10 -n 1)
-# Random between fastfetch and pokemon-colorscripts
-if (( RANDOM_NUMBER % 2 == 0 )); then
-    fastfetch
-else
-    pokemon-colorscripts --no-title -s -r
-fi
-
-# fastfetch
-# pokemon-colorscripts --no-title -s -r
+pokemon-colorscripts --no-title -s -r
 
 # Initialize Oh My Posh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/viet.omp.json)"
