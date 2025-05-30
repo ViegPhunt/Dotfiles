@@ -1,26 +1,45 @@
 #!/usr/bin/env bash
 
-pkgs=(
+pacman_packages=(
     # Hyprland & Wayland Environment
-    hyprland hyprlock hyprshot swww wlogout grim slurp swaynotificationcenter waybar rofi-wayland rofi-emoji
+    hyprland hyprlock swww grim slurp swaync waybar rofi rofi-emoji
+
     # System
-    brightnessctl networkmanagerapplet bluez bluez-tools blueman pipewire wireplumber pavucontrol
+    brightnessctl network-manager-applet bluez bluez-utils blueman pipewire wireplumber pavucontrol
+    
     # System Utilities and Media
-    # cava
-    ghostty nemo-with-extensions cheese loupe celluloid gnome-text-editor obs-studio
+    ghostty nemo cheese loupe celluloid gnome-text-editor obs-studio
+    
     # Qt & Display Manager Support
-    libsForQt5.sddm libsForQt5.qt5ct kdePackages.qt6ct
+    sddm qt5ct qt6ct
+
     # Input Method
-    fcitx5 fcitx5-gtk fcitx5-bamboo libsForQt5.fcitx5-configtool libsForQt5.fcitx5-qt
-    # Browsers and Communication
-    # discord spotify
-    brave
-    # Code Editors and IDEs
-    # vscode code-cursor sublime4
-    # Themes, Icons, Fonts
-    # apple-cursor 
-    whitesur-icon-theme nerd-fonts.jetbrains-mono adw-gtk3 nwg-look
+    fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-bamboo
+    
+    # Communication
+    discord
+    
     # Misc
-    xdg-desktop-portal-hyprland vips python312Packages.pillow
+    nwg-look adw-gtk-theme libvips
 )
-nix profile install ${pkgs[@]/#/nixpkgs#}
+
+aur_packages=(
+    # Hyprland & Wayland Environment
+    hyprshot wlogout xdg-desktop-portal-hyprland
+
+    # System Utilities and Media
+    cava
+
+    # Communication
+    spotify brave-bin zen-browser-bin
+
+    # Code Editors and IDEs
+    visual-studio-code-bin cursor-bin sublime-text-4
+
+    # Misc
+    sddm-sugar-candy-git apple_cursor whitesur-icon-theme ttf-jetbrains-mono-nerd
+    rofi-greenclip
+)
+
+sudo pacman -S --noconfirm "${pacman_packages[@]}"
+yay -S --noconfirm "${aur_packages[@]}"
