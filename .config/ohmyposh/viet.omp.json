@@ -1,6 +1,19 @@
 {
     "Created": "Phunt_Vieg_",
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "palette": {
+        "white":    "#CDD6F4",
+        "black":    "#181825",
+        "blue":     "#89B4FA",
+        "lavender": "#B4BEFE",
+        "cyan":     "#94E2D5",
+        "green":    "#A6E3A1",
+        "purple":   "#CBA6F7",
+        "red":      "#F38BA8",
+        "pink":     "#F5C2E7",
+        "yellow":   "#F9E2AF",
+        "orange":   "#FAB387"
+    },
     "blocks": [
         {
             "type": "prompt",
@@ -8,14 +21,14 @@
             "newline": true,
             "segments": [
                 {
-                    "foreground": "lightWhite",
+                    "foreground": "p:white",
                     "style": "plain",
                     "template": "\u256d\u2500",
                     "type": "text"
                 },
                 {
-                    "background": "yellow",
-                    "foreground": "black",
+                    "background": "p:yellow",
+                    "foreground": "p:black",
                     "leading_diamond": "\ue0b6",
                     "style": "diamond",
                     "template": " {{ .UserName }} ",
@@ -23,8 +36,8 @@
                     "type": "session"
                 },
                 {
-                    "background": "blue",
-                    "foreground": "black",
+                    "background": "p:blue",
+                    "foreground": "p:black",
                     "properties": {
                         "style": "full"
                     },
@@ -34,8 +47,8 @@
                     "type": "path"
                 },
                 {
-                    "background": "magenta",
-                    "foreground": "black",
+                    "background": "p:pink",
+                    "foreground": "p:black",
                     "properties": {
                         "branch_icon": "",
                         "fetch_stash_count": true,
@@ -48,8 +61,8 @@
                     "type": "git"
                 },
                 {
-                    "background": "magenta",
-                    "foreground": "black",
+                    "background": "p:pink",
+                    "foreground": "p:black",
                     "properties": {
                         "time_format": "15:04"
                     },
@@ -66,17 +79,17 @@
             "newline": true,
             "segments": [
                 {
-                    "foreground": "lightWhite",
+                    "foreground": "p:white",
                     "style": "plain",
-                    "template": "\u2570\u2500<green>\u26a1</>",
+                    "template": "\u2570\u2500<p:green>\u26a1</>",
                     "type": "text"
                 }
             ]
         }
     ],
     "transient_prompt": {
-        "template": "<red>\uf489 </><blue>\uf0da</><magenta>\uf105</> "
+        "template": "<p:red>\uf489 </><p:blue>\uf0da</><p:pink>\uf105</> "
     },
     "final_space": true,
-    "version": 6
+    "version": 7
 }
