@@ -67,7 +67,7 @@
                         "time_format": "15:04"
                     },
                     "style": "diamond",
-                    "template": "{{ if ne (.Segments.Contains \"Git\") true }} \u2665 {{ .CurrentDate | date .Format }} {{ end }}",
+                    "template": "{{ if ne (.Segments.Contains \"Git\") true }} \u2665  {{ .CurrentDate | date .Format }} {{ end }}",
                     "trailing_diamond": "\ue0b0",
                     "type": "time"
                 }
