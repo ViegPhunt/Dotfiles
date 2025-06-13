@@ -47,7 +47,7 @@
                     "type": "path"
                 },
                 {
-                    "background": "p:pink",
+                    "background": "p:orange",
                     "foreground": "p:black",
                     "properties": {
                         "branch_icon": "",
@@ -67,7 +67,7 @@
                         "time_format": "15:04"
                     },
                     "style": "diamond",
-                    "template": "{{ if ne (.Segments.Contains \"Git\") true }} \u2665  {{ .CurrentDate | date .Format }} {{ end }}",
+                    "template": " \u2665  {{ .CurrentDate | date .Format }} ",
                     "trailing_diamond": "\ue0b0",
                     "type": "time"
                 }
@@ -91,5 +91,5 @@
         "template": "<p:red>\uf489 </><p:blue>\uf0da</><p:pink>\uf105</> "
     },
     "final_space": true,
-    "version": 7
+    "version": 8
 }
