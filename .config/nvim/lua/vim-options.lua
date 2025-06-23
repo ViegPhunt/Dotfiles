@@ -13,10 +13,15 @@ vim.opt.autoindent = true
 -- Set color
 vim.opt.termguicolors = true
 -- Resize pane
-vim.keymap.set("n", "<C-Up>", "<C-w>+", {})     -- Resize: taller
-vim.keymap.set("n", "<C-Down>", "<C-w>-", {})   -- Resize: shorter
-vim.keymap.set("n", "<C-Left>", "<C-w><", {})   -- Resize: narrower
-vim.keymap.set("n", "<C-Right>", "<C-w>>", {})  -- Resize: wider
+vim.keymap.set("n", "<A-=>", "<C-w>+", {})  -- Resize: taller
+vim.keymap.set("n", "<A-->", "<C-w>-", {})  -- Resize: shorter
+vim.keymap.set("n", "<A-.>", "<C-w><", {})  -- Resize: narrower
+vim.keymap.set("n", "<A-,>", "<C-w>>", {})  -- Resize: wider
+-- Move on pane
+vim.keymap.set("n", "<C-Up>", "<C-w>k", {})     -- Move to upper pane
+vim.keymap.set("n", "<C-Down>", "<C-w>j", {})   -- Move to bottom pane
+vim.keymap.set("n", "<C-Left>", "<C-w>h", {})   -- Move to lèt pane
+vim.keymap.set("n", "<C-Right>", "<C-w>l", {})  -- Move to right pane
 -- Set move line
 vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", {})    -- Move line in Visual mode
 vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", {})      -- Move line in Visual mode
