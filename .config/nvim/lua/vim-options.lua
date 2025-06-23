@@ -12,6 +12,11 @@ vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 -- Set color
 vim.opt.termguicolors = true
+-- Resize pane
+vim.keymap.set("n", "<C-Up>", "<C-w>+", {})     -- Move window separator up
+vim.keymap.set("n", "<C-Down>", "<C-w>-", {})   -- Move window separator down
+vim.keymap.set("n", "<C-Left>", "<C-w><", {})   -- Move window separator left
+vim.keymap.set("n", "<C-Right>", "<C-w>>", {})  -- Move window separator right
 -- Set move line
 vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", {})    -- Move line in Visual mode
 vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", {})      -- Move line in Visual mode
