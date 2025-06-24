@@ -1,41 +1,46 @@
 return {
     {
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
-        end
-    },
-    {
-        "williamboman/mason-lspconfig.nvim",
-        config = function()
-            require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls" },    -- Lua, C/C++, Python, JavaScript
-            })
-        end
-    },
-    {
-        "neovim/nvim-lspconfig",
+        "mason-org/mason-lspconfig.nvim",
+        dependencies = {
+            "mason-org/mason.nvim",
+            "neovim/nvim-lspconfig",
+            "hrsh7th/cmp-nvim-lsp",
+        },
+
         config = function()
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
             local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({
-                settings = {
-                    Lua = {
-                        diagnostics = {
-                            globals = { "vim" },
+            
+            require("mason").setup({})
+
+            require("mason-lspconfig").setup({
+                ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls" },    -- Lua, C/C++, Python, JavaScript
+                automatic_installation = true,
+            })
+
+            require("mason-lspconfig").setup_handlers({
+                function(server_name)
+                    lspconfig[server_name].setup({
+                        capabilities = capabilities,
+                    })
+                end,
+
+                ["lua_ls"] = function()
+                    lspconfig.lua_ls.setup({
+                        capabilities = capabilities,
+                        settings = {
+                            Lua = {
+                                diagnostics = {
+                                    globals = { "vim" },
+                                },
+                                workspace = {
+                                    library = vim.api.nvim_get_runtime_file("", true),
+                                    checkThirdParty = false,
+                                },
+                            },
                         },
-                    },
-                },
-                capabilities = capabilities,
-            })
-            lspconfig.clangd.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.pyright.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.ts_ls.setup({
-                capabilities = capabilities,
+                    })
+                end,
             })
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})                   -- Shift k
