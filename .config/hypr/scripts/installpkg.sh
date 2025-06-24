@@ -28,7 +28,7 @@ aur_packages=(
     hyprshot wlogout xdg-desktop-portal-hyprland
 
     # System Utilities and Media
-    cava
+    cava tty-clock
 
     # Communication
     spotify brave-bin zen-browser-bin
