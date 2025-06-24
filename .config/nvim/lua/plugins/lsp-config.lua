@@ -16,31 +16,30 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls" },    -- Lua, C/C++, Python, JavaScript
                 automatic_installation = true,
-            })
+                handlers = {
+                    function(server_name)
+                        lspconfig[server_name].setup({
+                            capabilities = capabilities,
+                        })
+                    end,
 
-            require("mason-lspconfig").setup_handlers({
-                function(server_name)
-                    lspconfig[server_name].setup({
-                        capabilities = capabilities,
-                    })
-                end,
-
-                ["lua_ls"] = function()
-                    lspconfig.lua_ls.setup({
-                        capabilities = capabilities,
-                        settings = {
-                            Lua = {
-                                diagnostics = {
-                                    globals = { "vim" },
-                                },
-                                workspace = {
-                                    library = vim.api.nvim_get_runtime_file("", true),
-                                    checkThirdParty = false,
+                    ["lua_ls"] = function()
+                        lspconfig.lua_ls.setup({
+                            capabilities = capabilities,
+                            settings = {
+                                Lua = {
+                                    diagnostics = {
+                                        globals = { "vim" },
+                                    },
+                                    workspace = {
+                                        library = vim.api.nvim_get_runtime_file("", true),
+                                        checkThirdParty = false,
+                                    },
                                 },
                             },
-                        },
-                    })
-                end,
+                        })
+                    end,
+                },
             })
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})                   -- Shift k
