@@ -10,6 +10,6 @@ return {
                 null_ls.builtins.formatting.prettier,       -- JavaScript
             }
         })
-        vim.keymap.set('n', '<A-F>', vim.lsp.buf.format, {})    -- Alt Shift f
+        vim.keymap.set('n', '<leader>ff', vim.lsp.buf.format, {})    -- Space f f
     end
 }
