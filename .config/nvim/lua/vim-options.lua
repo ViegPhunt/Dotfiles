@@ -12,6 +12,9 @@ vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 -- Set color
 vim.opt.termguicolors = true
+-- Set leader
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 -- Resize pane
 vim.keymap.set("n", "<A-=>", "<C-w>+", {})  -- Resize: taller
 vim.keymap.set("n", "<A-->", "<C-w>-", {})  -- Resize: shorter
@@ -27,6 +30,8 @@ vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", {})    -- Move line in Visua
 vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", {})      -- Move line in Visual mode
 vim.keymap.set("n", "<A-Down>", ":m .+1<CR>", {})          -- Move line in Normal and Insert mode
 vim.keymap.set("n", "<A-Up>", ":m .-2<CR>", {})            -- Move line in Normal and Insert mode
--- Set leader
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+-- Indentation
+vim.keymap.set("n", "<Tab>", ">>", { noremap = true, silent = true })       -- Normal mode -> Tab: indent
+vim.keymap.set("n", "<S-Tab>", "<<", { noremap = true, silent = true })     -- Normal mode -> Shift-Tab: unindent
+vim.keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })      -- Visual mode -> Tab: indent
+vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })    -- Visual mode -> Shift-Tab: unindent
