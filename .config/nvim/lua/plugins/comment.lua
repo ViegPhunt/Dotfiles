@@ -1,7 +1,15 @@
 return {
     "numToStr/Comment.nvim",
     config = function ()
-        require('Comment').setup({})
+        require('Comment').setup({
+            padding = true,
+            sticky = true,
+            ignore = "^$",
+            mapping = {
+                basic = true,
+                extra = true,
+            },
+        })
 
         -- <C-_> is Ctrl + /
         vim.keymap.set("n", "<C-_>", "gcc", { remap = true }) -- Comment in Normal mode
