@@ -11,7 +11,7 @@ return {
             },
         })
 
-        -- <C-_> is Ctrl + /
+        -- Use "Space + /" to comment
         vim.keymap.set("n", "<leader>/", "gcc", { remap = true }) -- Comment in Normal mode
         vim.keymap.set("v", "<leader>/", "gc", { remap = true })  -- Comment in Visual mode
     end
