@@ -1,40 +1,56 @@
 return {
-    {
-        "L3MON4D3/LuaSnip",
-        dependencies = {
-            'saadparwaiz1/cmp_luasnip',
-            'rafamadriz/friendly-snippets',
+    'saghen/blink.cmp',
+    dependencies = {
+        'rafamadriz/friendly-snippets',
+        {
+            "saghen/blink.compat",
+            optional = true,
+            version = not vim.g.lazyvim_blink_main and "*",
         },
     },
-    {
-        "hrsh7th/nvim-cmp",
-        config = function()
-            require("luasnip.loaders.from_vscode").lazy_load()
-            local cmp = require("cmp")
-            cmp.setup({
-                snippet = {
-                    expand = function(args)
-                        require('luasnip').lsp_expand(args.body)
-                    end,
+
+    version = not vim.g.lazyvim_blink_main and "*",
+    build = vim.g.lazyvim_blink_main and "cargo build --release",
+
+    config = function ()
+        require('blink.cmp').setup({
+            keymap = { preset = 'enter' },
+
+            appearance = {
+                nerd_font_variant = 'mono'
+            },
+
+            completion = {
+                menu = {
+                    border = "rounded",
                 },
-                window = {
-                    completion = cmp.config.window.bordered(),
-                    documentation = cmp.config.window.bordered(),
+                ghost_text = {
+                    enabled = true,
                 },
-                mapping = cmp.mapping.preset.insert({
-                    ['<C-u>'] = cmp.mapping.scroll_docs(-4),    -- Ctrl u
-                    ['<C-d>'] = cmp.mapping.scroll_docs(4),     -- Ctrl d
-                    ['<C-Space>'] = cmp.mapping.complete(),     -- Ctrl Space
-                    ['<C-e>'] = cmp.mapping.abort(),            -- Ctrl e
-                    ['<CR>'] = cmp.mapping.confirm({ select = true }),
-                }),
-                sources = cmp.config.sources({
-                    { name = 'nvim_lsp' },
-                    { name = 'luasnip' },
-                }, {
-                    { name = 'buffer' },
-                }),
-            })
-        end
-    }
+                documentation = {
+                    window = {
+                        border = "rounded",
+                    },
+                    auto_show = true,
+                    auto_show_delay_ms = 200,
+                },
+            },
+
+            signature = { enabled = true },
+
+            sources = {
+                default = { 'lsp', 'path', 'snippets', 'buffer' },
+            },
+
+            fuzzy = { implementation = "prefer_rust_with_warning" }
+        })
+
+        -- All presets have the following mappings:
+        -- C-space: Open menu or open docs if already open
+        -- C-n/C-p or Up/Down: Select next/previous item
+        -- C-e: Hide menu
+        -- C-k: Toggle signature help (if signature.enabled = true)
+    end,
+
+    opts_extend = { "sources.default" }
 }

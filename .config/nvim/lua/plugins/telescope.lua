@@ -10,6 +10,7 @@ return {
                 build = 'make'
             },
         },
+
         config = function()
             require("telescope").setup({
                 extensions = {

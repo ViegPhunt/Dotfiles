@@ -4,18 +4,19 @@ return {
         dependencies = {
             "mason-org/mason.nvim",
             "neovim/nvim-lspconfig",
-            "hrsh7th/cmp-nvim-lsp",
+            "saghen/blink.cmp",
         },
 
         config = function()
-            local capabilities = require('cmp_nvim_lsp').default_capabilities()
             local lspconfig = require("lspconfig")
-            
+            local capabilities = require('blink.cmp').get_lsp_capabilities()
+
             require("mason").setup({})
 
             require("mason-lspconfig").setup({
                 ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls" },    -- Lua, C/C++, Python, JavaScript
                 automatic_installation = true,
+
                 handlers = {
                     function(server_name)
                         lspconfig[server_name].setup({
@@ -29,16 +30,12 @@ return {
                             settings = {
                                 Lua = {
                                     runtime = { version = 'LuaJIT' },
-                                    diagnostics = {
-                                        globals = { "vim" },
-                                    },
+                                    diagnostics = { globals = { "vim" } },
                                     workspace = {
                                         library = vim.api.nvim_get_runtime_file("", true),
                                         checkThirdParty = false,
                                     },
-                                    telemetry = {
-                                        enable = false,
-                                    },
+                                    telemetry = { enable = false },
                                 },
                             },
                         })
