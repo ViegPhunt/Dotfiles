@@ -65,10 +65,10 @@
             "label": "󰃟 "
         },
         "dnd": {
-            "text": "Do not disturb"
+            "text": "Do Not Disturb"
         },
         "title": {
-            "text": "Notifications center",
+            "text": "Notifications Center",
             "clear-all-button": true,
             "button-text": " 󰆴 "
         },
