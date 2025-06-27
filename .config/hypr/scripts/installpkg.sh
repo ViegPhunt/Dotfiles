@@ -20,7 +20,7 @@ pacman_packages=(
     discord
     
     # Misc
-    nwg-look adw-gtk-theme libvips
+    nwg-look adw-gtk-theme libvips cliphist
 )
 
 aur_packages=(
@@ -38,7 +38,6 @@ aur_packages=(
 
     # Misc
     sddm-sugar-candy-git apple_cursor whitesur-icon-theme ttf-jetbrains-mono-nerd
-    rofi-greenclip
 )
 
 sudo pacman -S --noconfirm "${pacman_packages[@]}"
