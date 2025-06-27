@@ -14,11 +14,13 @@
         "all-outputs": true,
         "warp-on-scroll": false,
         "format": "{name}",
+	"cursor": true,
     },
 
     "tray": {
         "icon-size": 20,
         "spacing": 10,
+	"cursor": true,
     },
 
     "bluetooth": {
@@ -49,6 +51,7 @@
         "format-alt": "{icon} {capacity}%",
         "format-icons": [" ", " ", " ", " ", " "],
         "tooltip-format": "{time}",
+	"cursor": false,
     },
 
     "pulseaudio": {
@@ -66,6 +69,7 @@
 
     "clock": {
         "format": "{:%a %d/%m/%Y ~ %H:%M}",
-        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "tooltip": false,
+        "on-click": "sway-nc",
     }
 }
