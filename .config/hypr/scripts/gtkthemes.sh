@@ -4,7 +4,7 @@ SCHEME='prefer-dark'
 THEME='adw-gtk3-dark'
 ICONS='WhiteSur-dark'
 CURSOR='macOS'
-FONT='Adwaita 12'
+FONT='Adwaita Sans 12'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
