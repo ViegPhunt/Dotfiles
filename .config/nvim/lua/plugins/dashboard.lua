@@ -2,11 +2,11 @@ return {
     "nvimdev/dashboard-nvim",
     event = 'VimEnter',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
+
     config = function()
         require('dashboard').setup({
             theme = 'doom',
             config = {
-                -- header = { "VIET-VIM" },
                 header = {
                     '',
                     '',
@@ -28,7 +28,7 @@ return {
                         desc = 'New File               ',
                         desc_hl = 'String',
                         key = 'n',
-                        action = 'lua vim.cmd("ene")'
+                        action = ':ene'
                     },
                     {
                         icon = '  ',
@@ -36,7 +36,7 @@ return {
                         desc = 'Find File               ',
                         desc_hl = 'String',
                         key = 'f',
-                        action = 'lua vim.cmd("silent Telescope find_files hidden=true no_ignore=true")'
+                        action = ':silent Telescope find_files hidden=true no_ignore=true'
                     },
                     {
                         icon = '  ',
@@ -44,15 +44,7 @@ return {
                         desc = 'Find Text               ',
                         desc_hl = 'String',
                         key = 't',
-                        action = 'lua vim.cmd("Telescope live_grep")'
-                    },
-                    {
-                        icon = '  ',
-                        icon_hl = 'Title',
-                        desc = 'Settings               ',
-                        desc_hl = 'String',
-                        key = 's',
-                        action = 'lua vim.cmd("e ~/.config/nvim/init.lua")'
+                        action = ':Telescope live_grep'
                     },
                     {
                         icon = '  ',
@@ -60,7 +52,7 @@ return {
                         desc = 'Update Plugins               ',
                         desc_hl = 'String',
                         key = 'u',
-                        action = 'lua vim.cmd("Lazy update")'
+                        action = ':Lazy update'
                     },
                     {
                         icon = '󰒲  ',
@@ -68,7 +60,7 @@ return {
                         desc = 'Lazy               ',
                         desc_hl = 'String',
                         key = 'l',
-                        action = 'lua vim.cmd("Lazy")'
+                        action = ':Lazy'
                     },
                     {
                         icon = '⏻  ',
@@ -76,7 +68,7 @@ return {
                         desc = 'Quit               ',
                         desc_hl = 'String',
                         key = 'q',
-                        action = 'lua vim.cmd("qa")'
+                        action = ':qa'
                     },
                 },
                 footer = {
