@@ -70,6 +70,6 @@
     "clock": {
         "format": "{:%a %d/%m/%Y ~ %H:%M}",
         "tooltip": false,
-        "on-click": "sway-nc",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
     }
 }
