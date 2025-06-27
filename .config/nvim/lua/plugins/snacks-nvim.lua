@@ -3,6 +3,7 @@ return {
 
     config = function ()
         require("snacks").setup({
+            -- Indent
             indent = {
                 enabled = true,
                 indent = {
@@ -11,7 +12,7 @@ return {
                 scope = {
                     enabled = false,
                 }
-			},
+            },
         })
     end
 }
