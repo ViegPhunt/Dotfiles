@@ -92,15 +92,15 @@
                     "label": " ",
                     "type": "toggle",
                     "active": false,
-                    "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && pactl set-source-mute @DEFAULT_SOURCE@ 0 || pactl set-source-mute @DEFAULT_SOURCE@ 1'",
-                    "update-command": "sh -c '[[ $(pactl get-source-mute @DEFAULT_SOURCE@) == *no* ]] && echo true || echo false'"
+                    "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && pactl set-source-mute @DEFAULT_SOURCE@ 1 || pactl set-source-mute @DEFAULT_SOURCE@ 0'",
+                    "update-command": "sh -c '[[ $(pactl get-source-mute @DEFAULT_SOURCE@) == *yes* ]] && echo true || echo false'"
                 },
                 {
                     "label": " ",
                     "type": "toggle",
                     "active": false,
-                    "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && pactl set-sink-mute @DEFAULT_SINK@ 0 || pactl set-sink-mute @DEFAULT_SINK@ 1'",
-                    "update-command": "sh -c '[[ $(pactl get-sink-mute @DEFAULT_SINK@) == *no* ]] && echo true || echo false'"
+                    "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && pactl set-sink-mute @DEFAULT_SINK@ 1 || pactl set-sink-mute @DEFAULT_SINK@ 0'",
+                    "update-command": "sh -c '[[ $(pactl get-sink-mute @DEFAULT_SINK@) == *yes* ]] && echo true || echo false'"
                 }
             ]
         }
