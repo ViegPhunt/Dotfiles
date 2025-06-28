@@ -62,14 +62,13 @@
             "show-per-app-label": false
         },
         "backlight": {
-            "label": "󰃟 ",
-            "device": "nvidia_wmi_ec_backlight"
+            "label": "󰃟 "
         },
         "dnd": {
-            "text": "Do not disturb"
+            "text": "Do Not Disturb"
         },
         "title": {
-            "text": "Notifications center",
+            "text": "Notifications Center",
             "clear-all-button": true,
             "button-text": " 󰆴 "
         },
