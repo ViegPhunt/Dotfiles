@@ -6,6 +6,7 @@
     font-size: 18px;
     color: @foreground;
     background-color: transparent;
+    background: transparent;
 }
 
 .control-center {
@@ -27,15 +28,9 @@
     margin: 5px;
 }
 
-.summary {
-  font-size: 1.1rem;
-}
-.time {
-  font-size: 0.8rem;
-}
-.body {
-  font-size: 1rem;
-}
+.summary { font-size: 1.1rem; }
+.time { font-size: 0.8rem; }
+.body { font-size: 1rem; }
 
 .notification-content {
     padding: 15px 10px 10px 20px;
@@ -66,7 +61,24 @@
 }
 .close-button:hover {
     background-color: alpha(@red, 0.8);
+}
+
+.notification-group-header,
+.notification-group-icon {
+    font-size: 0.9rem;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
+    background-color: @select;
+}
+
+.notification-group-collapse-button:hover {
+    background-color: alpha(@blue, 0.8);
+}
+.notification-group-close-all-button:hover {
+    background-color: alpha(@red, 0.8);
 }
 
 trough highlight {
@@ -88,7 +100,6 @@ slider {
     font-size: 1rem;
     padding: 20px 20px 10px;
     margin: unset;
-    background-color: transparent;
 }
 .widget-buttons-grid > flowbox > flowboxchild > button {
     background: @gray;
@@ -105,7 +116,6 @@ slider {
 }
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
     background: @blue;
-    transition: all .5s ease;
 }
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked:hover {
     background: alpha(@blue, 0.8);
@@ -114,8 +124,7 @@ slider {
 /* Mpris widget */
 @define-color mpris-album-art-overlay rgba(0, 0, 0, 0.55);
 @define-color mpris-button-hover rgba(0, 0, 0, 0.5);
-.widget-mpris {
-}
+
 .widget-mpris .widget-mpris-player {
     padding: 16px;
     margin: 16px 20px;
@@ -144,27 +153,22 @@ slider {
 
 /* Volume widget */
 .widget-volume {
-    background-color: transparent;
     padding: 6px 5px 5px 5px;
     margin: unset;
     font-size: 1.3rem;
 }
 .widget-volume > box > button {
-    background: transparent;
     border: none;
 }
 .per-app-volume {
-    background-color: transparent;
     padding: 4px 8px 8px 8px;
     margin: 0px 8px 8px 8px;
 }
 .widget-volume > revealer > list > row:hover {
-    background: transparent;
 }
 
 /* Backlight widget */
 .widget-backlight {
-    background-color: transparent;
     padding: 0 0 3px 16px;
     margin: unset;
     font-size: 1.1rem;
