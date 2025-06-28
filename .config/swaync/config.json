@@ -8,7 +8,7 @@
     "control-center-layer": "top",
     "layer-shell": true,
 
-    "control-center-width": 350,
+    "control-center-width": 400,
     "control-center-height": 850,
     "control-center-margin-top": 10,
     "control-center-margin-bottom": 10,
@@ -62,13 +62,14 @@
             "show-per-app-label": false
         },
         "backlight": {
-            "label": "󰃟 "
+            "label": "󰃟 ",
+            "device": "nvidia_wmi_ec_backlight"
         },
         "dnd": {
-            "text": "Do Not Disturb"
+            "text": "Do not disturb"
         },
         "title": {
-            "text": "Notifications Center",
+            "text": "Notifications center",
             "clear-all-button": true,
             "button-text": " 󰆴 "
         },
