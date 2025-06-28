@@ -5,29 +5,13 @@
     font-family: "Adwaita Sans";
     font-size: 18px;
     color: @foreground;
+    background-color: transparent;
 }
 
 .control-center {
     background-color: alpha(@background, 0.8);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.65);
-    padding: 15px;
-}
-
-.notification {
-    background-color: alpha(@background, 0.8);
-    padding: 3px;
-}
-
-.notification .notification-default-action .notification-content .text-box .summary {
-  font-size: 1rem;
-}
-
-.notification .notification-default-action .notification-content .text-box .time {
-  font-size: 0.68rem;
-}
-
-.notification .notification-default-action .notification-content .text-box .body {
-  font-size: 0.8rem;
+    padding: 5px;
 }
 
 .control-center .notification-row .notification-background {
@@ -35,21 +19,35 @@
     margin-top: 5px;
 }
 
+.notification {
+    background-color: alpha(@background, 0.8);
+}
+
 .notification > *:last-child > *  {
-    background-color: transparent;
     margin: 5px;
 }
 
-.notification-default-action:hover {
-    background-color: transparent;
+.summary {
+  font-size: 1.1rem;
+}
+.time {
+  font-size: 0.8rem;
+}
+.body {
+  font-size: 1rem;
 }
 
-.close-button {
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
+.notification-content {
+    padding: 15px 10px 10px 20px;
 }
-.close-button:hover {
-    background-color: alpha(@red, 0.8);
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
+
+.notification-action > button {
+    padding: unset;
+    margin: unset;
+}
+.notification-action > label {
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .notification.critical {
@@ -62,12 +60,13 @@
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.65);
 }
 
-.blank-window {
-    background: transparent;
+.close-button {
+    background-color: alpha(@select, 0.8);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
 }
-
-.floating-notifications {
-    background: transparent;
+.close-button:hover {
+    background-color: alpha(@red, 0.8);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 trough highlight {
@@ -87,7 +86,7 @@ slider {
 /* Buttons widget */
 .widget-buttons-grid {
     font-size: 1rem;
-    padding: 20px 6px 10px;
+    padding: 20px 20px 10px;
     margin: unset;
     background-color: transparent;
 }
@@ -95,7 +94,7 @@ slider {
     background: @gray;
     box-shadow: 0px 0px 10px alpha(@background, 0.8);
     border-radius: 12px;
-    min-width: 59px;
+    min-width: 60px;
     min-height: 30px;
     padding: 6px;
     margin: 0 3px 0;
