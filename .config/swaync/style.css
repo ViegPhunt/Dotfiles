@@ -1,4 +1,4 @@
-@import url('../colors/colors.css');
+rs/colors.css');
 
 * {
     outline: none;
@@ -152,7 +152,7 @@ tooltip {
     background-color: @mpris-button-hover;
 }
 .widget-mpris > box > button:hover {
-    background: @select;
+    background: alpha(@select, 0.6);
 }
 
 /* Volume widget */
