@@ -4,6 +4,7 @@
     outline: none;
     font-family: "Adwaita Sans";
     font-size: 18px;
+    text-shadow: none;
     color: @foreground;
     background-color: transparent;
     background: transparent;
@@ -56,7 +57,7 @@
 }
 
 .close-button {
-    background-color: alpha(@select, 0.8);
+    background-color: alpha(@gray, 0.8);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
 }
 .close-button:hover {
@@ -71,7 +72,7 @@
 .notification-group-collapse-button,
 .notification-group-close-all-button {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
-    background-color: @select;
+    background-color: @gray;
 }
 
 .notification-group-collapse-button:hover {
@@ -86,12 +87,15 @@ trough highlight {
 }
 scale trough {
     margin: 0rem 1rem;
-    background-color: @select;
+    background-color: @gray;
     min-height: 8px;
     min-width: 70px;
 }
 slider {
     background-color: @foreground;
+}
+tooltip {
+    background-color: @gray;
 }
 
 /*** Widgets ***/
@@ -148,7 +152,7 @@ slider {
     background-color: @mpris-button-hover;
 }
 .widget-mpris > box > button:hover {
-    background: @gray;
+    background: @select;
 }
 
 /* Volume widget */
