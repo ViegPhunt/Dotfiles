@@ -1,5 +1,6 @@
 -- Setup Neovim
 vim.opt.number = true                   -- Display line numbers
+vim.opt.cursorline = true               -- Highlight cursor line
 vim.opt.fillchars:append { eob = " " }  -- Hide '~' on empty buffer lines
 vim.opt.wrap = false                    -- Disable wrap line
 vim.opt.sidescroll = 1                  -- Scroll 1-char horizontally
