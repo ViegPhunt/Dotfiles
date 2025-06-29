@@ -37,7 +37,7 @@ aur_packages=(
     visual-studio-code-bin cursor-bin sublime-text-4
 
     # Misc
-    sddm-sugar-candy-git apple_cursor whitesur-icon-theme ttf-jetbrains-mono-nerd
+    sddm-sugar-candy-git apple_cursor whitesur-icon-theme ttf-jetbrains-mono-nerd tint
 )
 
 sudo pacman -S --noconfirm "${pacman_packages[@]}"
