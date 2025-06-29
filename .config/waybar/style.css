@@ -40,10 +40,12 @@ tooltip {
     color: @pink;
     border: 2px solid @pink;
     padding: 0 8px;
+    margin: 0 2px;
 }
 
 #workspaces button.urgent {
     background-color: @red;
+    padding: 0 8px;
 }
 
 #custom-power,
