@@ -26,17 +26,19 @@ tooltip {
 #workspaces button {
     color: @foreground;
     border: none;
-    padding: 0 8px;
+    padding: 0 5px;
 }
 #workspaces button:hover {
     color: @pink;
     transition: none;
     border-bottom: 1px solid @pink;
+    padding: 0 8px;
 }
 
 #workspaces button.active {
     color: @pink;
     border: 2px solid @pink;
+    padding: 0 8px;
 }
 
 #workspaces button.urgent {
@@ -50,6 +52,7 @@ tooltip {
 #battery,
 #pulseaudio,
 #clock {
+    color: @foreground;
     margin: 1px 0;
     padding: 0 10px;
 }
@@ -86,4 +89,5 @@ tooltip {
 
 #custom-power {
     margin-left: 10px;
-    padding: 0px 10
+    padding: 0px 10px 0 15px;
+}
