@@ -77,7 +77,10 @@ fi
 # Setup alias
 # Setup icons for files/folders in terminal
 alias ls='eza --icons --color=always'
-alias lt='eza -a --tree --level=1 --icons --color=always'
+alias ll='eza --icons --color=always -l'
+alias la='eza --icons --color=always -a'
+alias lla='eza --icons --color=always -la'
+alias lt='eza --icons --color=always -a --tree --level=1'
 alias grep='grep --color=always'
 alias vim='nvim'
 alias cbonsai='cbonsai -l -i -w 1'
