@@ -6,12 +6,8 @@ return {
             -- Indent
             indent = {
                 enabled = true,
-                indent = {
-                    char = "▏",
-                },
-                scope = {
-                    enabled = false,
-                }
+                indent = { char = "▏", },
+                scope = { enabled = false, }
             },
             -- Bigfile
             bigfile = { enabled = true, notify = false, },
@@ -21,14 +17,10 @@ return {
             input = {
                 enabled = true,
                 win = {
-                    row = function()
-                        return math.floor((vim.o.lines - 1) / 3)
-                    end,
-                    col = function()
-                        return math.floor((vim.o.columns - 60) / 2)
-                    end,
-                }
-            }
+                    row = math.floor((vim.o.lines - 1) / 3),
+                    col = math.floor((vim.o.columns - 60) / 2),
+                },
+            },
         })
     end
 }
