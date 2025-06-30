@@ -25,7 +25,7 @@ vim.keymap.set("n", "<A-.>", "<C-w><", { desc = "Make Window Narrower" })   -- A
 vim.keymap.set("n", "<C-Up>", "<C-w>k", { desc = "Move To Upper Pane" })        -- Ctrl Up
 vim.keymap.set("n", "<C-Down>", "<C-w>j", { desc = "Move To Bottom Pane" })     -- Ctrl Down
 vim.keymap.set("n", "<C-Left>", "<C-w>h", { desc = "Move To Left Pane" })       -- Ctrl Left
-vim.keymap.set("n", "<C-Right>", "<C-w>l", { desc "Move To Right Pane" })       -- Ctrl Right
+vim.keymap.set("n", "<C-Right>", "<C-w>l", { desc = "Move To Right Pane" })       -- Ctrl Right
 -- Set move line
 vim.keymap.set("n", "<A-Up>", ":m .-2<CR>", { desc = "Move Line Up (Normal mode)" })                -- Alt Up
 vim.keymap.set("n", "<A-Down>", ":m .+1<CR>", { desc = "Move Line Down (Normal mode)" })            -- Alt Down
