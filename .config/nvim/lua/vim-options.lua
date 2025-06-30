@@ -17,22 +17,22 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 -- Resize pane
-vim.keymap.set("n", "<A-=>", "<C-w>+", {})  -- Resize: taller
-vim.keymap.set("n", "<A-->", "<C-w>-", {})  -- Resize: shorter
-vim.keymap.set("n", "<A-.>", "<C-w><", {})  -- Resize: narrower
-vim.keymap.set("n", "<A-,>", "<C-w>>", {})  -- Resize: wider
+vim.keymap.set("n", "<A-=>", "<C-w>+", { desc = "Make Window Taller" })     -- Alt =
+vim.keymap.set("n", "<A-->", "<C-w>-", { desc = "Make Window Shorter" })    -- Alt -
+vim.keymap.set("n", "<A-,>", "<C-w>>", { desc = "Make Window Wider" })      -- Alt ,
+vim.keymap.set("n", "<A-.>", "<C-w><", { desc = "Make Window Narrower" })   -- Alt .
 -- Move on pane
-vim.keymap.set("n", "<C-Up>", "<C-w>k", {})     -- Move to upper pane
-vim.keymap.set("n", "<C-Down>", "<C-w>j", {})   -- Move to bottom pane
-vim.keymap.set("n", "<C-Left>", "<C-w>h", {})   -- Move to lèt pane
-vim.keymap.set("n", "<C-Right>", "<C-w>l", {})  -- Move to right pane
+vim.keymap.set("n", "<C-Up>", "<C-w>k", { desc = "Move To Upper Pane" })        -- Ctrl Up
+vim.keymap.set("n", "<C-Down>", "<C-w>j", { desc = "Move To Bottom Pane" })     -- Ctrl Down
+vim.keymap.set("n", "<C-Left>", "<C-w>h", { desc = "Move To Left Pane" })       -- Ctrl Left
+vim.keymap.set("n", "<C-Right>", "<C-w>l", { desc "Move To Right Pane" })       -- Ctrl Right
 -- Set move line
-vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", {})    -- Move line in Visual mode
-vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", {})      -- Move line in Visual mode
-vim.keymap.set("n", "<A-Down>", ":m .+1<CR>", {})          -- Move line in Normal and Insert mode
-vim.keymap.set("n", "<A-Up>", ":m .-2<CR>", {})            -- Move line in Normal and Insert mode
+vim.keymap.set("n", "<A-Up>", ":m .-2<CR>", { desc = "Move Line Up (Normal mode)" })                -- Alt Up
+vim.keymap.set("n", "<A-Down>", ":m .+1<CR>", { desc = "Move Line Down (Normal mode)" })            -- Alt Down
+vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", { desc = "Move Line(s) Up (Visual mode)" })       -- Alt Up
+vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", { desc = "Move Line(s) Down (Visual mode)" })   -- Alt Down
 -- Indentation
-vim.keymap.set("n", "<Tab>", ">>", { noremap = true, silent = true })       -- Normal mode -> Tab: indent
-vim.keymap.set("n", "<S-Tab>", "<<", { noremap = true, silent = true })     -- Normal mode -> Shift-Tab: unindent
-vim.keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })      -- Visual mode -> Tab: indent
-vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })    -- Visual mode -> Shift-Tab: unindent
+vim.keymap.set("n", "<Tab>", ">>", { noremap = true, silent = true, desc = "Indent Line (Normal mode)" })           -- Tab
+vim.keymap.set("n", "<S-Tab>", "<<", { noremap = true, silent = true, desc = "Unindent Line (Normal mode)" })       -- Shift Tab
+vim.keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true, desc = "Indent Selection (Visual mode)" })     -- Tab
+vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true, desc = "Unindent Selection (Visual mode)" }) -- Shift Tab

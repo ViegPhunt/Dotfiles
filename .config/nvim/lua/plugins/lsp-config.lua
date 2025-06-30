@@ -43,9 +43,9 @@ return {
                 },
             })
 
-            vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})                   -- Shift k
-            vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})             -- g d
-            vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})    -- Space c a
+            vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = "Show Hover Documentation" })              -- Shift k
+            vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "Go To Definition" })                -- g d
+            vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "Trigger Code Action" })    -- Space c a
         end
     }
 }

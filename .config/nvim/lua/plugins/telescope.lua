@@ -29,7 +29,7 @@ return {
             telescope.load_extension("ui-select")
 
             local builtin = require("telescope.builtin")
-            vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = "Find Files" })        -- Ctrl p
+            vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = "Find Files" })       -- Ctrl p
             vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live Grep" })    -- Space f g
         end
     }
