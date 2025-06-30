@@ -1,8 +1,7 @@
 return {
     {
         'nvim-telescope/telescope.nvim',
-        tag = '0.1.8',
-        dependencies = { 
+        dependencies = {
             'nvim-lua/plenary.nvim',
             'nvim-telescope/telescope-ui-select.nvim',
             {
@@ -12,12 +11,11 @@ return {
         },
 
         config = function()
-            require("telescope").setup({
+            local telescope = require("telescope")
+            telescope.setup({
                 extensions = {
                     ["ui-select"] = {
-                        require("telescope.themes").get_dropdown {
-                            -- even more opts
-                        }
+                        require("telescope.themes").get_dropdown ({})
                     },
                     fzf = {
                         fuzzy = true,                    -- false will only do exact matching
@@ -27,13 +25,12 @@ return {
                     }
                 },
             })
-            local builtin = require("telescope.builtin")
-            vim.keymap.set('n', '<C-p>', builtin.find_files, {})        -- Ctrl p
-            vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})    -- Space f g
-
-            local telescope = require("telescope")
             telescope.load_extension("fzf")
             telescope.load_extension("ui-select")
+
+            local builtin = require("telescope.builtin")
+            vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = "Find Files" })        -- Ctrl p
+            vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live Grep" })    -- Space f g
         end
     }
 }
