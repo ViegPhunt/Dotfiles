@@ -1,9 +1,13 @@
 return {
     'echasnovski/mini.nvim',
     config = function ()
-        require('mini.pairs').setup({})
+        -- Auto pairs
+        local pairs = require('mini.pairs')
+        pairs.setup({})
 
-        require('mini.comment').setup({
+        -- Comment code
+        local comment = require('mini.comment')
+        comment.setup({
             ignore_blank_line = true,
         })
         -- <C-_> is Ctrl + /
