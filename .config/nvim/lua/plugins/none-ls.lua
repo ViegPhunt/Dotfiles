@@ -10,6 +10,6 @@ return {
                 null_ls.builtins.formatting.prettier,       -- JavaScript
             }
         })
-        vim.keymap.set('n', '<leader>ff', vim.lsp.buf.format, { desc = "Format Code" })    -- Space f f
+        vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, { desc = "Format Code" })    -- Space g f
     end
 }
