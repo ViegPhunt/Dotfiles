@@ -1,3 +1,6 @@
+/* @import "$HOME/.config/colors/colors.css" */
+@import "../colors/colors.css";
+
 @keyframes glowing {
     0% {
         box-shadow: 0 0 30px @pink;
@@ -18,9 +21,6 @@
     font-family: "JetBrainsMono Nerd Font";
     transition: 20ms;
 }
-
-/* @import "$HOME/.config/colors/colors.css" */
-@import "../colors/colors.css";
 
 window {
     background: rgba(0, 0, 0, 0.3);
