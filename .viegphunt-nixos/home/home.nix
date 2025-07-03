@@ -21,6 +21,6 @@
             ".config".source = ../../.config;
             ".zshrc".source = ../../.zshrc;
             ".tmux.conf".source = ../../.tmux.conf;
-        }
+        };
     };
 }
