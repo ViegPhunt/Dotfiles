@@ -4,7 +4,7 @@
         btop cmatrix cowsay fastfetch pipes cbonsai oh-my-posh pokemon-colorscripts-mac
 
         # Essential utilities
-        gnumake curl wget unzip dpkg fzf eza bat zoxide neovim tmux ripgrep fd stow man openssh netcat-gnu
+        gnumake curl wget unzip dpkg fzf eza bat zoxide neovim tmux ripgrep fd stow man netcat-gnu
 
         # CTF tools
         exiftool gdb pwntools binwalk
