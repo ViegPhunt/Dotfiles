@@ -1,8 +1,9 @@
 { pkgs, ... }:{
     stylix = {
         enable = true;
-        autoEnable = false;
         polarity = "dark";
+
+        targets.gtk.enable = true;
 
         cursor = {
             package = pkgs.apple-cursor;
@@ -10,23 +11,24 @@
             size = 24;
         };
 
-        gtk = {
-            theme = {
-                package = pkgs.adw-gtk3;
-                name = "adw-gtk3-dark";
-            };
-            iconTheme = {
-                package = pkgs.whitesur-icon-theme;
-                name = "WhiteSur-dark";
-            };
+        theme = {
+            package = pkgs.adw-gtk3;
+            name = "adw-gtk3-dark";
+        };
+
+        iconTheme = {
+            package = pkgs.whitesur-icon-theme;
+            name = "WhiteSur-dark";
         };
 
         fonts = {
-            sansSerif = {
+            sans = {
                 package = pkgs.adwaita-fonts;
                 name = "Adwaita Sans";
             };
             sizes.applications = 12;
         };
     };
+
+    gtk.enable = true;
 }
