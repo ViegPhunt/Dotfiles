@@ -11,11 +11,6 @@
             size = 24;
         };
 
-        iconTheme = {
-            package = pkgs.whitesur-icon-theme;
-            name = "WhiteSur-dark";
-        };
-
         fonts = {
             sansSerif = {
                 package = pkgs.adwaita-fonts;
