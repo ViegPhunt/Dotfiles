@@ -1,5 +1,5 @@
 {
-    import = [
+    imports = [
         ./bluetooth.nix
         ./boot.nix
         ./dm.nix
