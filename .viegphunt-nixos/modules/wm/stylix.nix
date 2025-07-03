@@ -4,11 +4,6 @@
         autoEnable = false;
         polarity = "dark";
 
-        targets = {
-            gtk.enable = true;
-            cursors.enable = true;
-        };
-
         cursor = {
             package = pkgs.apple-cursor;
             name = "macOS";
@@ -34,4 +29,6 @@
             sizes.applications = 12;
         };
     };
+
+    gtk.enable = true;
 }
