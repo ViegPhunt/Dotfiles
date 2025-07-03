@@ -4,6 +4,7 @@
         "@wheel"
     ];
 
+    programs.zsh.enable = true;
     users.users.${var.user} = {
         isNormalUser = true;
         shell = pkgs.zsh;
