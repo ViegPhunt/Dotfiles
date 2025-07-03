@@ -1,7 +1,6 @@
 { pkgs, ... }:{
     stylix = {
         enable = true;
-        autoEnable = false;
         polarity = "dark";
 
         targets = {
