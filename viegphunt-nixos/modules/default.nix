@@ -1,0 +1,7 @@
+{
+    import = [
+        ./pkgs
+        ./system
+        ./wm
+    ]
+}
