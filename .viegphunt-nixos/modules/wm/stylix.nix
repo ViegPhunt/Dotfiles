@@ -13,7 +13,7 @@
 
         theme = {
             package = pkgs.adw-gtk3;
-            name = "adw-gtk3-dark";
+            dark = "adw-gtk3-dark";
         };
 
         iconTheme = {
@@ -22,7 +22,7 @@
         };
 
         fonts = {
-            sans = {
+            sansSerif = {
                 package = pkgs.adwaita-fonts;
                 name = "Adwaita Sans";
             };
