@@ -3,7 +3,7 @@
     home-manager.users.${var.user}.services.udiskie = { 
         enable = true;
         automount = true;
-        tray = "Auto";
+        tray = "auto";
         notify = true;
     };
 }
