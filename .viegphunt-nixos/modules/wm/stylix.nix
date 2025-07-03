@@ -34,6 +34,4 @@
             sizes.applications = 12;
         };
     };
-
-    gtk.enable = true;
 }
