@@ -1,7 +1,0 @@
-{
-    imports = [
-        ./pkgs
-        ./system
-        ./wm
-    ];
-}
