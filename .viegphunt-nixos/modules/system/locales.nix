@@ -3,7 +3,7 @@
 
     i18n.defaultLocale = "en_US.UTF-8";
 
-    extraLocaleSettings = {
+    i18n.extraLocaleSettings = {
       LC_ADDRESS = "vi_VN";
       LC_IDENTIFICATION = "vi_VN";
       LC_MEASUREMENT = "vi_VN";
