@@ -24,13 +24,18 @@
             inputs.home-manager.nixosModules.default
             inputs.stylix.nixosModules.stylix
         ];
+
+        myPkgs = import inputs.nixpkgs { inherit system; };
+        pwndbg = import ./modules/pkgs/pwndbg.nix { inherit myPkgs; };
     in
     {
+        packages.${system}.pwndbg = pwndbg;
+
         nixosConfigurations = {
             Viet-ThinkPad = inputs.nixpkgs.lib.nixosSystem {
                 inherit system;
                 specialArgs = {
-                    inherit inputs;
+                    inherit inputs pwndbg;
                     var = baseUser // {
                         host = "Viet-ThinkPad";
                     };
@@ -41,7 +46,7 @@
             Viet-Legion = inputs.nixpkgs.lib.nixosSystem {
                 inherit system;
                 specialArgs = {
-                    inherit inputs;
+                    inherit inputs pwndbg;
                     var = baseUser // {
                         host = "Viet-Legion";
                     };

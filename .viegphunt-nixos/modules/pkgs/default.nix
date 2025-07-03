@@ -6,6 +6,7 @@
         ./hyprland.nix
         ./inputmethod.nix
         ./media.nix
+        ./pwndbg.nix
         ./system.nix
         ./terminal.nix
         ./theme.nix
