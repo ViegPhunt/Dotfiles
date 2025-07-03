@@ -11,11 +11,6 @@
             size = 24;
         };
 
-        theme = {
-            package = pkgs.adw-gtk3;
-            dark = "adw-gtk3-dark";
-        };
-
         iconTheme = {
             package = pkgs.whitesur-icon-theme;
             name = "WhiteSur-dark";
