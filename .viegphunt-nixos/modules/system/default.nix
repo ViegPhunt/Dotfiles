@@ -9,5 +9,5 @@
         ./system.nix
         ./usb.nix
         ./users.nix
-    ]
+    ];
 }
