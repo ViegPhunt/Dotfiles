@@ -1,4 +1,4 @@
-{ var, pwndbg, ... }:{
+{ var, ... }:{
     imports = [
         ./stylix.nix
     ];
@@ -21,7 +21,6 @@
             ".config".source = ../../.config;
             ".zshrc".source = ../../.zshrc;
             ".tmux.conf".source = ../../.tmux.conf;
-            ".gdbinit".source = "${pwndbg}/.gdbinit";
         }
     };
 }
