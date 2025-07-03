@@ -3,6 +3,7 @@
         ./bluetooth.nix
         ./boot.nix
         ./dm.nix
+        ./hardware-configuration.nix
         ./locales.nix
         ./networking.nix
         ./sound.nix
