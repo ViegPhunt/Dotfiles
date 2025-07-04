@@ -2,13 +2,13 @@
 
 pacman_packages=(
     # Hyprland & Wayland Environment
-    hyprland hyprlock swww grim slurp swaync waybar rofi rofi-emoji
+    hyprland hyprlock swww grim slurp swaync waybar rofi rofi-emoji hyprshot xdg-desktop-portal-hyprland xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-gtk
 
     # System
     brightnessctl network-manager-applet bluez bluez-utils blueman pipewire wireplumber pavucontrol
     
     # System Utilities and Media
-    ghostty nemo cheese loupe celluloid gnome-text-editor obs-studio
+    ghostty nemo gvfs cheese loupe celluloid gnome-text-editor obs-studio ffmpeg cava
     
     # Qt & Display Manager Support
     sddm qt5ct qt6ct
@@ -25,10 +25,9 @@ pacman_packages=(
 
 aur_packages=(
     # Hyprland & Wayland Environment
-    hyprshot wlogout xdg-desktop-portal-hyprland
+    wlogout
 
     # System Utilities and Media
-    cava
 
     # Communication
     spotify brave-bin zen-browser-bin
@@ -37,7 +36,7 @@ aur_packages=(
     visual-studio-code-bin cursor-bin sublime-text-4
 
     # Misc
-    sddm-sugar-candy-git apple_cursor whitesur-icon-theme ttf-jetbrains-mono-nerd tint
+    sddm-sugar-candy-git apple_cursor whitesur-icon-theme ttf-jetbrains-mono-nerd ttf-apple-emoji tint
 )
 
 sudo pacman -S --noconfirm "${pacman_packages[@]}"
