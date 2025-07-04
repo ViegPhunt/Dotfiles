@@ -34,43 +34,24 @@ configuration {
 #element {
     border:        0;
     border-radius: 8px;
-    padding:       3px ;
+    padding:       3px;
 }
 #element.normal.normal {
     background-color: @background;
-    text-color:       @foreground;
-}
-#element.normal.urgent {
-    background-color: @urgent-background;
-    text-color:       @urgent-foreground;
-}
-#element.normal.active {
-    background-color: @active-background;
-    text-color:       @foreground;
-}
-#element.selected.normal {
-    background-color: @selected-background;
-    text-color:       @foreground;
-}
-#element.selected.urgent {
-    background-color: @selected-urgent-background;
-    text-color:       @foreground;
-}
-#element.selected.active {
-    background-color: @selected-active-background;
     text-color:       @foreground;
 }
 #element.alternate.normal {
     background-color: @background;
     text-color:       @foreground;
 }
-#element.alternate.urgent {
-    background-color: @urgent-background;
+#element.selected.normal {
+    background-color: @selected-background;
     text-color:       @foreground;
 }
-#element.alternate.active {
-    background-color: @active-background;
-    text-color:       @foreground;
+element-text, element-icon {
+    size:             45px;
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 #scrollbar {
@@ -102,9 +83,4 @@ configuration {
 #entry {
     spacing:    0;
     text-color: @foreground;
-}
-element-text, element-icon {
-    size:             45px;
-    background-color: inherit;
-    text-color:       inherit;
 }
