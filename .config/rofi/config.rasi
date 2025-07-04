@@ -28,7 +28,7 @@ configuration {
 }
 #message {
     border:       0px;
-    border-color: @separatorcolor;
+    border-color: @bordercolor;
     padding:      1px;
 }
 #textbox {
@@ -48,7 +48,7 @@ configuration {
     padding:       3px ;
 }
 #element.normal.normal {
-    background-color: @background-color;
+    background-color: @background;
     text-color:       @foreground;
 }
 #element.normal.urgent {
@@ -72,7 +72,7 @@ configuration {
     text-color:       @foreground;
 }
 #element.alternate.normal {
-    background-color: @background-color;
+    background-color: @background;
     text-color:       @foreground;
 }
 #element.alternate.urgent {
@@ -92,7 +92,7 @@ configuration {
 }
 #sidebar {
     border:       2px dash 0px 0px ;
-    border-color: @separatorcolor;
+    border-color: @bordercolor;
 }
 #button.selected {
     background-color: @selected-background;
