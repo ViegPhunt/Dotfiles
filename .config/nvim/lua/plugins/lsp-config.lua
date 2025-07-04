@@ -14,7 +14,8 @@ return {
             require("mason").setup({})
 
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls" },    -- Lua, C/C++, Python, JavaScript
+                -- Lua, C/C++, Python, JavaScript, Java, Html, Css, SQL
+                ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls", "jdtls", "html", "cssls", "sqlls" },
                 automatic_installation = true,
 
                 handlers = {
@@ -47,5 +48,10 @@ return {
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "Go To Definition" })                -- g d
             vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "Trigger Code Action" })    -- Space c a
         end
+    },
+
+    -- Java
+    {
+        "mfussenegger/nvim-jdtls";
     }
 }
