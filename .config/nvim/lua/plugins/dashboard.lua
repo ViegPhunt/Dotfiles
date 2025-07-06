@@ -36,7 +36,7 @@ return {
                         desc = 'Find File               ',
                         desc_hl = 'String',
                         key = 'f',
-                        action = ':silent Telescope find_files hidden=true no_ignore=true'
+                        action = ':Telescope find_files hidden=true no_ignore=true'
                     },
                     {
                         icon = '  ',
