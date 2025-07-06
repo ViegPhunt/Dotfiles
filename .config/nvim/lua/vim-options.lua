@@ -17,7 +17,7 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 -- Relativenumber toggle
-vim.keymap.set("n", "<leader>rn", ":set relativenumber!<CR>", { desc = "Relativenumber toggle", silent = true })    -- Space r n
+vim.keymap.set("n", "<leader>rn", ":set relativenumber!<CR>", { desc = "Relativenumber Toggle", silent = true })    -- Space r n
 -- Resize pane
 vim.keymap.set("n", "<A-=>", "<C-w>+", { desc = "Make Window Taller" })     -- Alt =
 vim.keymap.set("n", "<A-->", "<C-w>-", { desc = "Make Window Shorter" })    -- Alt -
