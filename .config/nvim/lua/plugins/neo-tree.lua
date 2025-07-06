@@ -19,6 +19,10 @@ return {
                 width = 25, -- Set width window neotree (default 40)
             },
         })
-        vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left<CR>', { desc = "Open File Explorer", silent = true })    -- Space e
+        vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left<CR>', {
+            noremap = true,
+            desc = "Open File Explorer",
+            silent = true
+        })  -- Space e
     end
 }
