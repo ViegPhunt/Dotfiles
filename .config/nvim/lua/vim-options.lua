@@ -29,10 +29,10 @@ vim.keymap.set("n", "<C-Down>", "<C-w>j", { desc = "Move To Bottom Pane", norema
 vim.keymap.set("n", "<C-Left>", "<C-w>h", { desc = "Move To Left Pane", noremap = true })       -- Ctrl Left
 vim.keymap.set("n", "<C-Right>", "<C-w>l", { desc = "Move To Right Pane", noremap = true })     -- Ctrl Right
 -- Set move line
-vim.keymap.set("n", "<A-Up>", ":m .-2<CR>", { desc = "Move Line Up (Normal mode)", noremap = true, silent = true })                -- Alt Up
-vim.keymap.set("n", "<A-Down>", ":m .+1<CR>", { desc = "Move Line Down (Normal mode)", noremap = true, silent = true })            -- Alt Down
-vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", { desc = "Move Line(s) Up (Visual mode)", noremap = true, silent = true })       -- Alt Up
-vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", { desc = "Move Line(s) Down (Visual mode)", noremap = true, silent = true })   -- Alt Down
+vim.keymap.set("n", "<A-Up>", ":m .-2<CR>", { desc = "Move Line Up (Normal mode)", noremap = true, silent = true })                 -- Alt Up
+vim.keymap.set("n", "<A-Down>", ":m .+1<CR>", { desc = "Move Line Down (Normal mode)", noremap = true, silent = true })             -- Alt Down
+vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", { desc = "Move Line(s) Up (Visual mode)", noremap = true, silent = true })        -- Alt Up
+vim.keymap.set("v", "<A-Down>", ":m '>+1<CR>gv=gv", { desc = "Move Line(s) Down (Visual mode)", noremap = true, silent = true })    -- Alt Down
 -- Indentation
 vim.keymap.set("n", "<Tab>", ">>", { desc = "Indent Line (Normal mode)", noremap = true })              -- Tab
 vim.keymap.set("n", "<S-Tab>", "<<", { desc = "Unindent Line (Normal mode)", noremap = true })          -- Shift Tab
