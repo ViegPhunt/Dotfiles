@@ -20,8 +20,8 @@ return {
             },
         })
         vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left<CR>', {
-            noremap = true,
             desc = "Open File Explorer",
+            noremap = true,
             silent = true
         })  -- Space e
     end
