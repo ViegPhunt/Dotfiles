@@ -1,3 +1,6 @@
+-- Set leader
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 -- Relativenumber toggle
 vim.keymap.set("n", "<leader>rn", ":set relativenumber!<CR>", { desc = "Relativenumber Toggle", noremap = true, silent = true })    -- Space r n
 -- Resize pane
