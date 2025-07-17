@@ -1,5 +1,6 @@
 -- Setup Neovim
 vim.opt.number = true                   -- Display line numbers
+vim.opt.numberwidth = 3                 -- Set min number column width
 vim.opt.cursorline = true               -- Highlight cursor line
 vim.opt.fillchars:append { eob = " " }  -- Hide '~' on empty buffer lines
 vim.opt.wrap = false                    -- Disable wrap line
