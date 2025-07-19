@@ -3,7 +3,6 @@
 vim.opt.laststatus = 3
 vim.opt.showmode = false
 vim.opt.undofile = true
-vim.opt.whichwrap:append "<>[]hl"       -- Allow left/right keys to wrap to the next/previous line
 
 -- Line numbers
 vim.opt.number = true                   -- Display line numbers
