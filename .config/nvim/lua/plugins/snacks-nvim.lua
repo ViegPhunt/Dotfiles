@@ -6,13 +6,16 @@ return {
             -- Indent
             indent = {
                 enabled = true,
-                indent = { char = "▏", },
-                scope = { enabled = false, }
+                indent = { char = "▏" },
+                scope = { enabled = false }
             },
+
             -- Bigfile
-            bigfile = { enabled = true, notify = false, },
+            bigfile = { enabled = true, notify = false },
+            
             -- Quickfile
-            quickfile = { enabled = true, },
+            quickfile = { enabled = true },
+            
             -- Input
             input = {
                 enabled = true,
