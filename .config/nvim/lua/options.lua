@@ -30,14 +30,3 @@ opt.termguicolors = true
 
 -- Sync clipboard between OS and Neovim.
 opt.clipboard = "unnamedplus"
--- Enable clipboard on wsl
-if vim.fn.has("wsl") == 1 then
-    local clip = "clip.exe"
-    local powershell = 'powershell.exe -NoLogo -NoProfile -Command "[Console]::Out.Write((Get-Clipboard -Raw).ToString().Replace(\'`r\', \'\'))"'
-    vim.g.clipboard = {
-        name = "WslClipboard",
-        copy = { ["+"] = clip, ["*"] = clip },
-        paste = { ["+"] = powershell, ["*"] = powershell },
-        cache_enabled = false,
-    }
-end
