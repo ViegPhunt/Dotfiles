@@ -1,27 +1,32 @@
--- Setup Options Neovim
+local opt = vim.opt
 
-vim.opt.laststatus = 3
-vim.opt.showmode = false
-vim.opt.undofile = true
+-- Setup Options Neovim --
+
+opt.laststatus = 3
+opt.showmode = false
+opt.undofile = true
 
 -- Line numbers
-vim.opt.number = true                   -- Display line numbers
-vim.opt.numberwidth = 2                 -- Set min number column width
+opt.number = true                   -- Display line numbers
+opt.numberwidth = 2                 -- Set min number column width
 
 -- Display and UI
-vim.opt.cursorline = true               -- Highlight cursor line
-vim.opt.fillchars = { eob = " " }       -- Hide '~' on empty buffer lines
-vim.opt.wrap = false                    -- Disable wrap line
-vim.opt.sidescroll = 1                  -- Scroll 1-char horizontally
-vim.opt.sidescrolloff = 5               -- Keep 5-char margin
-vim.opt.signcolumn = "yes"
-vim.opt.winborder = "rounded"
+opt.cursorline = true               -- Highlight cursor line
+opt.fillchars = { eob = " " }       -- Hide '~' on empty buffer lines
+opt.wrap = false                    -- Disable wrap line
+opt.sidescroll = 1                  -- Scroll 1-char horizontally
+opt.sidescrolloff = 5               -- Keep 5-char margin
+opt.signcolumn = "yes"
+opt.winborder = "rounded"
 
 -- Set tab = 4 space
-vim.opt.expandtab = true
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+opt.expandtab = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
 
 -- Set color
-vim.opt.termguicolors = true
+opt.termguicolors = true
+
+-- Sync clipboard between OS and Neovim.
+opt.clipboard = "unnamedplus"
