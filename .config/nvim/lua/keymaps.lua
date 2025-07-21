@@ -10,7 +10,7 @@ vim.g.maplocalleader = "\\"
 keymap("n", "<leader>rn", ":set relativenumber!<CR>", { desc = "Relativenumber Toggle", silent = true })    -- Space r n
 
 -- General clear highlights
-keymap("n", "<Esc", ":noh<CR>", { desc = "General Clear Highlights", silent = true })
+keymap("n", "<Esc>", ":noh<CR>", { desc = "General Clear Highlights", silent = true })
 
 -- Resize pane
 keymap("n", "<A-=>", "<C-w>+", { desc = "Make Window Taller" })     -- Alt =
