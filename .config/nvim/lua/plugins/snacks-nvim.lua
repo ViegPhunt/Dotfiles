@@ -10,9 +10,6 @@ return {
                 scope = { enabled = false }
             },
 
-            -- Scroll
-            scroll = { enabled = true },
-
             -- Bigfile
             bigfile = { enabled = true, notify = false },
 
