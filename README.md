@@ -31,8 +31,9 @@ This repository includes configuration for:
 │   ├── viegphunt/      # Personal scripts
 │   ├── waybar/
 │   └── wlogout/
+├── .stow-local-ignore
 ├── .tmux.conf
 ├── .zshrc
-├── LICENSE             # MIT License
+├── LICENSE
 └── README.md           # This file
 ```
