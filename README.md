@@ -33,5 +33,6 @@ This repository includes configuration for:
 │   └── wlogout/
 ├── .tmux.conf
 ├── .zshrc
+├── LICENSE             # MIT License
 └── README.md           # This file
 ```
