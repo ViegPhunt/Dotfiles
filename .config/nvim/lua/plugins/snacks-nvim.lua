@@ -12,10 +12,10 @@ return {
 
             -- Bigfile
             bigfile = { enabled = true, notify = false },
-            
+
             -- Quickfile
             quickfile = { enabled = true },
-            
+
             -- Input
             input = {
                 enabled = true,
