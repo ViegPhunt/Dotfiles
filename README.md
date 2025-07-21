@@ -31,9 +31,9 @@ This repository includes configuration for:
 │   ├── viegphunt/      # Personal scripts
 │   ├── waybar/
 │   └── wlogout/
-├── .stow-local-ignore
+├── .stow-local-ignore  # Stow ignore list
 ├── .tmux.conf
 ├── .zshrc
-├── LICENSE
+├── LICENSE             # License
 └── README.md           # This file
 ```
