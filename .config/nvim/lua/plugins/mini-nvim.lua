@@ -8,7 +8,7 @@ return {
         -- Surround
         local surround = require('mini.surround')
         surround.setup({})
-        
+
         -- Comment code
         local comment = require('mini.comment')
         comment.setup({
