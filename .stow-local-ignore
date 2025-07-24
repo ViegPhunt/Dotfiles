@@ -1,3 +1,5 @@
+# ~./dotfiles/.stow.local.ignore: Files to be ignored by gnu 'stow'
+#
 # Comments and blank lines are allowed.
 #
 # See 'info stow' section "4 Ignore Lists" for more information
