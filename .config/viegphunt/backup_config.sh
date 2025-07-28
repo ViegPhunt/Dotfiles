@@ -9,7 +9,6 @@ dotfiles_root="$(pwd)"
 echo "==> Backing up existing config files before stowing"
 echo "==> Backup will be saved to: $backup_dir"
 mkdir -p "$backup_dir"
-echo
 
 # Define targets
 targets=(".zshrc" ".tmux.conf")
@@ -32,3 +31,4 @@ done
 
 echo
 echo "Backup completed!"
+echo
