@@ -33,7 +33,7 @@ aur_packages=(
     spotify brave-bin zen-browser-bin
 
     # Code Editors and IDEs
-    visual-studio-code-bin cursor-bin sublime-text-4
+    visual-studio-code-bin sublime-text-4
 
     # Misc
     sddm-sugar-candy-git apple_cursor whitesur-icon-theme tint
