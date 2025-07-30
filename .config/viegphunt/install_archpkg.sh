@@ -11,7 +11,7 @@ pacman_packages=(
     ghostty nemo gvfs cheese loupe celluloid gnome-text-editor obs-studio ffmpeg cava
     
     # Qt & Display Manager Support
-    sddm qt5ct qt6ct
+    sddm qt5ct qt6ct qt5-wayland qt6-wayland
 
     # Input Method
     fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-bamboo
