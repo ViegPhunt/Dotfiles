@@ -20,7 +20,7 @@ pacman_packages=(
     discord
     
     # Misc
-    nwg-look adw-gtk-theme libvips cliphist gnome-characters
+    nwg-look adw-gtk-theme libvips cliphist gnome-characters keepass
 )
 
 aur_packages=(
