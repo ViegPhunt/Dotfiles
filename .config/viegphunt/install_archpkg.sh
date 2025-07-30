@@ -20,7 +20,7 @@ pacman_packages=(
     discord
     
     # Misc
-    nwg-look adw-gtk-theme kvantum-qt5 libvips cliphist gnome-characters keepass
+    adwaita-fonts noto-fonts ttf-jetbrains-mono-nerd nwg-look adw-gtk-theme kvantum-qt5 libvips cliphist gnome-characters keepass
 )
 
 aur_packages=(
@@ -36,7 +36,7 @@ aur_packages=(
     visual-studio-code-bin cursor-bin sublime-text-4
 
     # Misc
-    sddm-sugar-candy-git apple_cursor whitesur-icon-theme ttf-jetbrains-mono-nerd tint
+    sddm-sugar-candy-git apple_cursor whitesur-icon-theme tint
 )
 
 sudo pacman -S --noconfirm "${pacman_packages[@]}"
