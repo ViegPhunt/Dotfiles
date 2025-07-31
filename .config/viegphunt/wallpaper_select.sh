@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if pidof rofi > /dev/null; then
+    pkill rofi
+fi
+
 wallpapers_dir="$HOME/Pictures/Wallpapers"
 
 selected_wallpaper=$(for a in "$wallpapers_dir"/*; do
