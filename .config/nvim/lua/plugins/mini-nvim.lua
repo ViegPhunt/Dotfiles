@@ -1,16 +1,16 @@
 return {
-    'echasnovski/mini.nvim',
+    "echasnovski/mini.nvim",
     config = function ()
         -- Auto pairs
-        local pairs = require('mini.pairs')
+        local pairs = require("mini.pairs")
         pairs.setup({})
 
         -- Surround
-        local surround = require('mini.surround')
+        local surround = require("mini.surround")
         surround.setup({})
 
         -- Comment code
-        local comment = require('mini.comment')
+        local comment = require("mini.comment")
         comment.setup({
             ignore_blank_line = true,
         })

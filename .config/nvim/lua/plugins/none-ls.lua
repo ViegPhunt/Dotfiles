@@ -14,6 +14,6 @@ return {
                 formatting.sql_formatter,       -- SQL
             }
         })
-        vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, { desc = "Format Code" })    -- Space g f
+        vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, { desc = "Format Code" })    -- Space g f
     end
 }

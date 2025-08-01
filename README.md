@@ -22,6 +22,7 @@ This repository includes configuration for:
 ├── .config/
 │   ├── cava/
 │   ├── colors/         # Color schemes
+│   ├── fontconfig/
 │   ├── ghostty/
 │   ├── hypr/
 │   ├── nvim/

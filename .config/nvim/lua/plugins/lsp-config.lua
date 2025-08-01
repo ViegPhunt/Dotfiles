@@ -9,7 +9,7 @@ return {
 
         config = function()
             local lspconfig = require("lspconfig")
-            local capabilities = require('blink.cmp').get_lsp_capabilities()
+            local capabilities = require("blink.cmp").get_lsp_capabilities()
 
             require("mason").setup({})
 
@@ -30,7 +30,7 @@ return {
                             capabilities = capabilities,
                             settings = {
                                 Lua = {
-                                    runtime = { version = 'LuaJIT' },
+                                    runtime = { version = "LuaJIT" },
                                     diagnostics = { globals = { "vim" } },
                                     workspace = {
                                         library = vim.api.nvim_get_runtime_file("", true),
@@ -44,9 +44,9 @@ return {
                 },
             })
 
-            vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = "Show Hover Documentation" })              -- Shift k
-            vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "Go To Definition" })                -- g d
-            vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "Trigger Code Action" })    -- Space c a
+            vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show Hover Documentation" })              -- Shift k
+            vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go To Definition" })                -- g d
+            vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Trigger Code Action" })    -- Space c a
         end
     },
 

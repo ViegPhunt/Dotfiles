@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-SCHEME='prefer-dark'
-THEME='adw-gtk3-dark'
-ICONS='WhiteSur-dark'
-CURSOR='macOS'
-UI_FONT='Adwaita Sans 12'
-MONO_FONT='JetBrainsMono Nerd Font 12'
+SCHEME="prefer-dark"
+THEME="adw-gtk3-dark"
+ICONS="WhiteSur-dark"
+CURSOR="macOS"
+UI_FONT="Adwaita Sans 12"
+MONO_FONT="JetBrainsMono Nerd Font 12"
 
-SCHEMA='gsettings set org.gnome.desktop.interface'
+SCHEMA="gsettings set org.gnome.desktop.interface"
 
 apply_themes() {
     ${SCHEMA} color-scheme "$SCHEME"

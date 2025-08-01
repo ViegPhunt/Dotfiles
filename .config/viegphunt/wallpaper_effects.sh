@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-current_wallpaper_path=$(swww query | head -n 1 | awk -F'image: ' '/image:/ {print $2}')
+current_wallpaper_path=$(swww query | head -n 1 | awk -F"image: " "/image:/ {print $2}")
 destination_wallpaper_dir="$HOME/.cache/swww"
 mkdir -p "$destination_wallpaper_dir"
 

@@ -1,12 +1,12 @@
 return {
     {
-        'nvim-telescope/telescope.nvim',
+        "nvim-telescope/telescope.nvim",
         dependencies = {
-            'nvim-lua/plenary.nvim',
-            'nvim-telescope/telescope-ui-select.nvim',
+            "nvim-lua/plenary.nvim",
+            "nvim-telescope/telescope-ui-select.nvim",
             {
-                'nvim-telescope/telescope-fzf-native.nvim',
-                build = 'make'
+                "nvim-telescope/telescope-fzf-native.nvim",
+                build = "make"
             },
         },
 
@@ -29,8 +29,8 @@ return {
             telescope.load_extension("ui-select")
 
             local builtin = require("telescope.builtin")
-            vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "Find Files" })  -- Space f f
-            vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live Grep" })    -- Space f g
+            vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find Files" })  -- Space f f
+            vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep" })    -- Space f g
         end
     }
 }

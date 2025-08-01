@@ -1,7 +1,7 @@
 return {
-    'saghen/blink.cmp',
+    "saghen/blink.cmp",
     dependencies = {
-        'rafamadriz/friendly-snippets',
+        "rafamadriz/friendly-snippets",
         {
             "saghen/blink.compat",
             optional = true,
@@ -13,11 +13,11 @@ return {
     build = vim.g.lazyvim_blink_main and "cargo build --release",
 
     config = function ()
-        require('blink.cmp').setup({
-            keymap = { preset = 'enter' },
+        require("blink.cmp").setup({
+            keymap = { preset = "enter" },
 
             appearance = {
-                nerd_font_variant = 'mono'
+                nerd_font_variant = "mono"
             },
 
             completion = {
@@ -39,7 +39,7 @@ return {
             signature = { enabled = true },
 
             sources = {
-                default = { 'lsp', 'path', 'snippets', 'buffer' },
+                default = { "lsp", "path", "snippets", "buffer" },
             },
 
             fuzzy = { implementation = "prefer_rust_with_warning" }
