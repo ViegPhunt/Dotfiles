@@ -9,12 +9,13 @@ return {
         config = function()
             require("mason").setup({})
 
-            -- Lua, C/C++, Python, JavaScript, Java, Html, Css, SQL
+            -- Lua, C/C++, Python, JavaScript, Java, HTML, CSS, SQL
             local servers = { "lua_ls", "clangd", "pyright", "ts_ls", "jdtls", "html", "cssls", "sqlls" }
             require("mason-lspconfig").setup({
                 ensure_installed = servers,
             })
 
+            vim.lsp.config("*", { capabilities = vim.lsp.protocol.make_client_capabilities() })
             vim.lsp.config('lua_ls', {
                 settings = {
                     Lua = {
@@ -33,8 +34,6 @@ return {
                     vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = event.buf, desc = "Trigger Code Action" })    -- Space c a
                 end,
             })
-
-            vim.diagnostic.config({ virtual_text = true, signs = true, underline = true, update_in_insert = false })
         end
     },
 
