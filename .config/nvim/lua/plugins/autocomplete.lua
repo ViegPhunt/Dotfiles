@@ -2,7 +2,6 @@ return {
     "saghen/blink.cmp",
     dependencies = {
         "rafamadriz/friendly-snippets",
-        "hrsh7th/cmp-nvim-lsp",
         {
             "saghen/blink.compat",
             optional = true,
@@ -16,10 +15,7 @@ return {
     config = function ()
         require("blink.cmp").setup({
             keymap = { preset = "super-tab" },
-
-            appearance = {
-                nerd_font_variant = "mono"
-            },
+            appearance = { nerd_font_variant = "mono" },
 
             completion = {
                 menu = { border = "rounded" },
@@ -39,7 +35,6 @@ return {
 
             fuzzy = { implementation = "prefer_rust_with_warning" }
         })
-        vim.lsp.config("*", { capabilities = require("cmp_nvim_lsp").default_capabilities() })
 
         -- All presets have the following mappings:
         -- C-space: Open menu or open docs if already open
