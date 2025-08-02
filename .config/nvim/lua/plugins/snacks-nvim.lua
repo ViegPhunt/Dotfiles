@@ -15,15 +15,6 @@ return {
 
             -- Quickfile
             quickfile = { enabled = true },
-
-            -- Input
-            input = {
-                enabled = true,
-                win = {
-                    row = math.floor((vim.o.lines - 1) / 3),
-                    col = math.floor((vim.o.columns - 60) / 2),
-                },
-            },
         })
     end
 }
