@@ -23,6 +23,10 @@ keymap("n", "<C-Up>", "<C-w>k", { desc = "Move To Upper Pane" })        -- Ctrl 
 keymap("n", "<C-Down>", "<C-w>j", { desc = "Move To Bottom Pane" })     -- Ctrl Down
 keymap("n", "<C-Left>", "<C-w>h", { desc = "Move To Left Pane" })       -- Ctrl Left
 keymap("n", "<C-Right>", "<C-w>l", { desc = "Move To Right Pane" })     -- Ctrl Right
+keymap("n", "<C-K>", "<C-w>k", { desc = "Move To Upper Pane" })         -- Ctrl K
+keymap("n", "<C-J>", "<C-w>j", { desc = "Move To Bottom Pane" })        -- Ctrl J
+keymap("n", "<C-H>", "<C-w>h", { desc = "Move To Left Pane" })          -- Ctrl H
+keymap("n", "<C-L>", "<C-w>l", { desc = "Move To Right Pane" })         -- Ctrl L
 
 -- Set move line
 keymap("n", "<A-Up>", ":m .-2<CR>", { desc = "Move Line Up (Normal mode)", silent = true })                 -- Alt Up
