@@ -14,23 +14,17 @@ return {
 
     config = function ()
         require("blink.cmp").setup({
-            keymap = { preset = "enter" },
+            keymap = { preset = "super-tab" },
 
             appearance = {
                 nerd_font_variant = "mono"
             },
 
             completion = {
-                menu = {
-                    border = "rounded",
-                },
-                ghost_text = {
-                    enabled = true,
-                },
+                menu = { border = "rounded" },
+                ghost_text = { enabled = true },
                 documentation = {
-                    window = {
-                        border = "rounded",
-                    },
+                    window = { border = "rounded" },
                     auto_show = true,
                     auto_show_delay_ms = 200,
                 },
@@ -47,7 +41,6 @@ return {
 
         -- All presets have the following mappings:
         -- C-space: Open menu or open docs if already open
-        -- C-n/C-p or Up/Down: Select next/previous item
         -- C-e: Hide menu
         -- C-k: Toggle signature help (if signature.enabled = true)
     end,

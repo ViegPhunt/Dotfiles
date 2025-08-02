@@ -1,5 +1,6 @@
 return {
     "echasnovski/mini.nvim",
+
     config = function ()
         -- Auto pairs
         local pairs = require("mini.pairs")
