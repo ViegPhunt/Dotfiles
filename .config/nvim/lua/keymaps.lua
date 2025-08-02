@@ -19,10 +19,6 @@ keymap("n", "<A-,>", "<C-w>>", { desc = "Make Window Wider" })      -- Alt ,
 keymap("n", "<A-.>", "<C-w><", { desc = "Make Window Narrower" })   -- Alt .
 
 -- Move on pane
-keymap("n", "<C-Up>", "<C-w>k", { desc = "Move To Upper Pane" })        -- Ctrl Up
-keymap("n", "<C-Down>", "<C-w>j", { desc = "Move To Bottom Pane" })     -- Ctrl Down
-keymap("n", "<C-Left>", "<C-w>h", { desc = "Move To Left Pane" })       -- Ctrl Left
-keymap("n", "<C-Right>", "<C-w>l", { desc = "Move To Right Pane" })     -- Ctrl Right
 keymap("n", "<C-K>", "<C-w>k", { desc = "Move To Upper Pane" })         -- Ctrl K
 keymap("n", "<C-J>", "<C-w>j", { desc = "Move To Bottom Pane" })        -- Ctrl J
 keymap("n", "<C-H>", "<C-w>h", { desc = "Move To Left Pane" })          -- Ctrl H
