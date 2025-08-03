@@ -9,7 +9,7 @@ return {
                 formatting.stylua,              -- Lua
                 formatting.clang_format,        -- C/C++
                 formatting.black,               -- Python
-                formatting.prettier,            -- JavaScript, Html, Css
+                formatting.prettier,            -- JavaScript, HTML, CSS
                 formatting.google_java_format,  -- Java
                 formatting.sql_formatter,       -- SQL
             }
