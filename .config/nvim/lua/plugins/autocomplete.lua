@@ -12,7 +12,7 @@ return {
     version = not vim.g.lazyvim_blink_main and "*",
     build = vim.g.lazyvim_blink_main and "cargo build --release",
 
-    config = function ()
+    config = function()
         require("blink.cmp").setup({
             keymap = { preset = "super-tab" },
             appearance = { nerd_font_variant = "mono" },

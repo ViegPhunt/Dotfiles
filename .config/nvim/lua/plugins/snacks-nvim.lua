@@ -1,7 +1,7 @@
 return {
     "folke/snacks.nvim",
 
-    config = function ()
+    config = function()
         require("snacks").setup({
             -- Indent
             indent = {
