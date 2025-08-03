@@ -5,7 +5,7 @@ return {
         config = function()
             require("mason-tool-installer").setup({
                 -- C/C++, Python, JavaScript, HTML, CSS, Java, SQL
-                ensure_installed = { "cpplint", "flake8", "eslint", "htmlhint", "stylelint", "checkstyle", "sqlfluff" },
+                ensure_installed = { "cpplint", "flake8", "eslint_d", "htmlhint", "stylelint", "checkstyle", "sqlfluff" },
             })
         end
     },
