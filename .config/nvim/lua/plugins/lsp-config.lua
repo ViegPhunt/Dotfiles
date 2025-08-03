@@ -1,19 +1,14 @@
 return {
     {
-        "mason-org/mason.nvim",
-
-        config = function()
-            require("mason").setup({})
-        end
-    },
-
-    {
         "neovim/nvim-lspconfig",
         dependencies = {
+            "mason-org/mason.nvim",
             "mason-org/mason-lspconfig.nvim",
         },
 
         config = function()
+            require("mason").setup({})
+
             -- Lua, C/C++, Python, JavaScript, HTML, CSS, SQL
             local servers = { "lua_ls", "clangd", "pyright", "ts_ls", "html", "cssls", "sqlls" }
             require("mason-lspconfig").setup({
