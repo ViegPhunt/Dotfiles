@@ -4,8 +4,8 @@ return {
 
         config = function()
             require("mason-tool-installer").setup({
-                -- Lua, C/C++, Python, JavaScript, HTML, CSS, Java, SQL
-                ensure_installed = { "stylua", "clang-format", "black", "prettier", "google-java-format", "sql-formatter" },
+                -- Lua, C/C++, Python, JavaScript, HTML, CSS, SQL
+                ensure_installed = { "stylua", "clang-format", "black", "prettier", "sql-formatter" },
             })
         end
     },
