@@ -1,18 +1,18 @@
 return {
     {
-        "neovim/nvim-lspconfig",
+        "mason-org/mason-lspconfig.nvim",
         dependencies = {
             "mason-org/mason.nvim",
-            "mason-org/mason-lspconfig.nvim",
+            "neovim/nvim-lspconfig",
         },
 
         config = function()
             require("mason").setup({})
 
-            -- Lua, C/C++, Python, JavaScript, HTML, CSS, SQL
-            local servers = { "lua_ls", "clangd", "pyright", "ts_ls", "html", "cssls", "sqlls" }
             require("mason-lspconfig").setup({
-                ensure_installed = servers,
+                -- Lua, C/C++, Python, JavaScript, HTML, CSS, Java, SQL
+                ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls", "html", "cssls", "jdtls", "sqlls" },
+                automatic_enable = true
             })
 
             vim.lsp.config("*", { capabilities = vim.lsp.protocol.make_client_capabilities() })
@@ -25,7 +25,6 @@ return {
                     },
                 },
             })
-            vim.lsp.enable(servers)
 
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = function(event)
