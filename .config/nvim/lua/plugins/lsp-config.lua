@@ -29,8 +29,7 @@ return {
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = function(event)
                     vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = event.buf, desc = "Show Hover Documentation" })              -- Shift k
-                    vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = event.buf, desc = "Go To Definition" })                -- g d
-                    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = event.buf, desc = "Trigger Code Action" })    -- Space c a
+                    vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { buffer = event.buf, desc = "Open Diagnostic Float" }) -- Space d
                 end,
             })
         end
