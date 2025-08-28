@@ -1,5 +1,5 @@
 return {
-    "echasnovski/mini.nvim",
+    "nvim-mini/mini.nvim",
 
     config = function()
         -- Auto pairs
