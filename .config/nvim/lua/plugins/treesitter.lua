@@ -16,7 +16,6 @@ return {
                 "css",
                 "markdown",
                 "markdown_inline",
-                "sql",
             },
             highlight = { enable = true },
             indent = { enable = true },
