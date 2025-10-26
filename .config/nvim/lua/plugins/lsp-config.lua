@@ -9,8 +9,8 @@ return {
         require("mason").setup({})
 
         require("mason-lspconfig").setup({
-            -- Lua, C/C++, Python, JavaScript, HTML, CSS, SQL
-            ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls", "html", "cssls", "sqlls" },
+            -- Lua, C/C++, Python, JavaScript, HTML, CSS
+            ensure_installed = { "lua_ls", "clangd", "pyright", "ts_ls", "html", "cssls" },
             automatic_enable = true
         })
 
