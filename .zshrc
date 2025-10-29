@@ -67,6 +67,8 @@ alias lla='eza --icons --color=always -la'
 alias lt='eza --icons --color=always -a --tree --level=1'
 alias grep='grep --color=always'
 alias vim='nvim'
+alias lzg='lazygit'
+alias lzd='lazydocker'
 alias cbonsai='cbonsai -l -i -w 1'
 
 # ─── Tools Init ──────────────────────────────────────────────────
