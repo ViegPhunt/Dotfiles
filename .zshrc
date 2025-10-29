@@ -59,9 +59,6 @@ elif [ -f "$realpath" ]; then
 fi
 '
 
-# ─── Paths ─────────────────────────────────────────────────────
-export PATH=$PATH:$HOME/go/bin
-
 # ─── Aliases ─────────────────────────────────────────────────────
 alias ls='eza --icons --color=always'
 alias ll='eza --icons --color=always -l'
