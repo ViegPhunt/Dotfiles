@@ -20,7 +20,7 @@ pacman_packages=(
     discord
     
     # Misc
-    ttf-jetbrains-mono-nerd noto-fonts nwg-look adw-gtk-theme kvantum-qt5 libvips cliphist gnome-characters keepass
+    ttf-jetbrains-mono-nerd noto-fonts nwg-look adw-gtk-theme kvantum-qt5 libvips libheif openslide poppler-glib cliphist gnome-characters keepass
 )
 
 aur_packages=(
