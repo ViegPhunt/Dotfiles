@@ -16,9 +16,6 @@ pacman_packages=(
     # Input Method
     fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-bamboo
     
-    # Communication
-    discord
-    
     # Misc
     ttf-jetbrains-mono-nerd noto-fonts nwg-look adw-gtk-theme kvantum-qt5 libvips libheif openslide poppler-glib cliphist gnome-characters keepass
 )
@@ -34,6 +31,9 @@ aur_packages=(
 
     # Code Editors and IDEs
     visual-studio-code-bin sublime-text-4
+        
+    # Communication
+    vesktop
 
     # Misc
     ttf-segoe-ui-variable sddm-astronaut-theme apple_cursor whitesur-icon-theme tint
