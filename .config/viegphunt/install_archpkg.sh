@@ -8,7 +8,7 @@ pacman_packages=(
     brightnessctl network-manager-applet bluez bluez-utils blueman pipewire wireplumber pavucontrol
     
     # System Utilities and Media
-    ghostty nemo gvfs cheese loupe celluloid gnome-text-editor obs-studio ffmpeg cava
+    ghostty nemo gvfs cheese loupe celluloid gnome-text-editor evince obs-studio ffmpeg cava
     
     # Qt & Display Manager Support
     sddm qt5ct qt6ct qt5-wayland qt6-wayland
