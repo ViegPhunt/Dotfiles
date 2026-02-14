@@ -79,6 +79,9 @@ alias bat='bat --paging=never'
 # Setup zoxide (better than cd)
 eval "$(zoxide init zsh)"
 
+# Allowing comments in interactive zsh commands
+setopt interactivecomments
+
 
 # Pokemon startup
 pokemon-colorscripts --no-title -s -r
